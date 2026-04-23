@@ -1048,7 +1048,7 @@ a.contact-row:hover { transform: translateX(4px); }
   .hero-trust { gap: 24px; }
   .services-grid { grid-template-columns: 1fr 1fr; }
   .why-grid { grid-template-columns: 1fr 1fr; }
-  .gallery-extra { grid-template-columns: 1fr 1fr; }
+  .gallery-extra { grid-template-columns: repeat(3, 1fr); }
   .compare-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
   .testimonials-grid { grid-template-columns: 1fr 1fr; }
   .depannage-actions { flex-direction: row; flex-wrap: wrap; }
@@ -1102,7 +1102,7 @@ a.contact-row:hover { transform: translateX(4px); }
   .hero-card { padding: 44px 40px; }
   .services-grid { grid-template-columns: repeat(3, 1fr); }
   .why-grid { grid-template-columns: repeat(4, 1fr); }
-  .gallery-extra { grid-template-columns: repeat(4, 1fr); }
+  .gallery-extra { grid-template-columns: repeat(3, 1fr); max-width: 1100px; margin-left: auto; margin-right: auto; }
   .testimonials-grid { grid-template-columns: repeat(3, 1fr); gap: 24px; }
   .compare-grid { grid-template-columns: repeat(3, 1fr); }
   .depannage-inner { grid-template-columns: 1.3fr 1fr; align-items: center; gap: 48px; }
