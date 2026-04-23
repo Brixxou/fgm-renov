@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.fgm-renov.fr/</loc>
+    <lastmod>2026-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.fgm-renov.fr/img/apres2.JPG</image:loc>
+      <image:caption>Salle d'eau rénovée — travertin, vasque pierre, robinetterie dorée</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.fgm-renov.fr/img/apres3.JPG</image:loc>
+      <image:caption>Douche à l'italienne — faïence zellige vert sauge, robinetterie dorée</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.fgm-renov.fr/img/apres1.JPG</image:loc>
+      <image:caption>Pose de cuisine équipée — Vallée de la Risle</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.fgm-renov.fr/img/2213880919008131217.JPG</image:loc>
+      <image:caption>Douche à l'italienne — faïence zellige bleue</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.fgm-renov.fr/merci.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>

@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+*.log
+node_modules/
+.env
+.env.local
+.netlify/
+.vscode/
+.idea/
+stitch.zip
+concepts-design.html
