@@ -365,33 +365,32 @@ h1, h2, h3, h4 {
   width: 100%;
 }
 .hero-card {
-  background: rgba(247, 242, 234, 0.62);
+  background: rgba(20, 16, 14, 0.55);
   backdrop-filter: blur(14px) saturate(1.1);
   -webkit-backdrop-filter: blur(14px) saturate(1.1);
   padding: 36px 28px;
   max-width: 620px;
   border-left: 3px solid var(--terra);
   border-radius: 2px;
-  box-shadow: 0 20px 60px rgba(0,0,0,.25);
-  color: var(--dark);
+  box-shadow: 0 20px 60px rgba(0,0,0,.4);
+  color: var(--cream);
 }
 .hero-card .overline {
   margin-bottom: 18px;
-  color: var(--dark);
-  font-weight: 800;
+  color: var(--cream);
+  font-weight: 700;
 }
 .hero-card .overline::before {
-  background: var(--terra-dark);
+  background: var(--terra);
   width: 36px;
   height: 2px;
 }
 .hero-card .h1 {
-  color: var(--dark);
+  color: var(--cream);
   margin-bottom: 0;
 }
 .hero-card .h1 i {
-  color: var(--terra-ink);
-  font-weight: 700;
+  color: var(--terra);
 }
 .h1 {
   font-size: clamp(38px, 9vw, 72px);
