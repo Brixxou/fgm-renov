@@ -342,8 +342,8 @@ body:has(.nav-menu.is-open) .nav { position: fixed; top: 0; left: 0; right: 0; }
 /* ────────────────── Hero ────────────────── */
 .hero {
   position: relative;
-  min-height: 100vh;          /* fallback */
-  min-height: 100svh;         /* viewport "small" : exclut barres mobiles dynamiques */
+  min-height: 88vh;           /* fallback */
+  min-height: 88svh;          /* viewport "small" : exclut barres mobiles dynamiques */
   color: var(--cream);
   display: flex;
   align-items: flex-start;
