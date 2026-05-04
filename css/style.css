@@ -1146,7 +1146,7 @@ a.contact-row:hover { transform: translateX(4px); }
     color: var(--terra-ink);
   }
 
-  .hero { min-height: 680px; }
+  .hero { min-height: 100vh; min-height: 100svh; }
   .hero-content { padding: 60px var(--gutter); }
   .hero-card { padding: 44px 40px; }
   .services-grid { grid-template-columns: repeat(3, 1fr); }
