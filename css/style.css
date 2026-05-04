@@ -375,7 +375,16 @@ h1, h2, h3, h4 {
   box-shadow: 0 20px 60px rgba(0,0,0,.25);
   color: var(--dark);
 }
-.hero-card .overline { margin-bottom: 18px; }
+.hero-card .overline {
+  margin-bottom: 18px;
+  color: var(--dark);
+  font-weight: 800;
+}
+.hero-card .overline::before {
+  background: var(--terra-dark);
+  width: 36px;
+  height: 2px;
+}
 .hero-card .h1 {
   color: var(--dark);
   margin-bottom: 0;
