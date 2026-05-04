@@ -263,10 +263,15 @@ h1, h2, h3, h4 {
   color: var(--dark);
   position: sticky;
   top: 0;
-  z-index: 500;
+  z-index: 700;
   border-bottom: 1px solid var(--line);
   transition: box-shadow .25s var(--ease);
 }
+/* Quand le menu mobile est ouvert : on masque la topbar et on
+   colle la nav en haut → la croix reste accessible et le menu
+   couvre tout sans chevauchement. */
+body:has(.nav-menu.is-open) .topbar { display: none; }
+body:has(.nav-menu.is-open) .nav { position: fixed; top: 0; left: 0; right: 0; }
 .nav.is-scrolled { box-shadow: 0 4px 18px rgba(26,22,20,.06); }
 .nav-inner {
   max-width: var(--max);
@@ -317,6 +322,7 @@ h1, h2, h3, h4 {
   transform: translateX(100%);
   transition: transform .35s var(--ease);
   overflow-y: auto;
+  z-index: 600; /* sous la nav (700) pour ne jamais masquer la croix */
 }
 .nav-menu.is-open { transform: translateX(0); }
 .nav-menu a {
@@ -336,10 +342,10 @@ h1, h2, h3, h4 {
 /* ────────────────── Hero ────────────────── */
 .hero {
   position: relative;
-  min-height: 560px;
+  min-height: 460px;
   color: var(--cream);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   overflow: hidden;
 }
 .hero-bg {
@@ -361,7 +367,7 @@ h1, h2, h3, h4 {
   z-index: 2;
   max-width: var(--max);
   margin: 0 auto;
-  padding: 72px var(--gutter);
+  padding: 32px var(--gutter) 64px;
   width: 100%;
 }
 .hero-card {
@@ -1140,7 +1146,7 @@ a.contact-row:hover { transform: translateX(4px); }
   }
 
   .hero { min-height: 680px; }
-  .hero-content { padding: 120px var(--gutter); }
+  .hero-content { padding: 80px var(--gutter) 120px; }
   .hero-card { padding: 44px 40px; }
   .services-grid { grid-template-columns: repeat(3, 1fr); }
   .why-grid { grid-template-columns: repeat(4, 1fr); }
