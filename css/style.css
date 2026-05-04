@@ -342,7 +342,8 @@ body:has(.nav-menu.is-open) .nav { position: fixed; top: 0; left: 0; right: 0; }
 /* ────────────────── Hero ────────────────── */
 .hero {
   position: relative;
-  min-height: 460px;
+  min-height: 100vh;          /* fallback */
+  min-height: 100svh;         /* viewport "small" : exclut barres mobiles dynamiques */
   color: var(--cream);
   display: flex;
   align-items: flex-start;
@@ -367,7 +368,7 @@ body:has(.nav-menu.is-open) .nav { position: fixed; top: 0; left: 0; right: 0; }
   z-index: 2;
   max-width: var(--max);
   margin: 0 auto;
-  padding: 32px var(--gutter) 64px;
+  padding: 24px var(--gutter);
   width: 100%;
 }
 .hero-card {
@@ -1146,7 +1147,7 @@ a.contact-row:hover { transform: translateX(4px); }
   }
 
   .hero { min-height: 680px; }
-  .hero-content { padding: 80px var(--gutter) 120px; }
+  .hero-content { padding: 60px var(--gutter); }
   .hero-card { padding: 44px 40px; }
   .services-grid { grid-template-columns: repeat(3, 1fr); }
   .why-grid { grid-template-columns: repeat(4, 1fr); }
