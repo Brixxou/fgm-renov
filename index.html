@@ -23,117 +23,296 @@
   <meta property="og:title" content="FGM RENOV — Artisan Rénovation en Vallée de la Risle">
   <meta property="og:description" content="Rénovation intérieure à Saint-Philibert-sur-Risle, Pont-Audemer et toute la Vallée de la Risle. Salle de bain, carrelage, placo, parquet, cuisine. Devis gratuit sous 48h.">
   <meta property="og:url" content="https://www.fgm-renov.fr/">
-  <meta property="og:image" content="https://www.fgm-renov.fr/img/apres2.JPG">
+  <meta property="og:image" content="https://www.fgm-renov.fr/img/og-fgm-renov.JPG">
   <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="1600">
-  <meta property="og:image:alt" content="Salle d'eau rénovée par FGM RENOV — travertin, vasque pierre, robinetterie dorée">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="FGM RENOV — artisan rénovation intérieure en Vallée de la Risle">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="FGM RENOV — Artisan Rénovation Vallée de la Risle">
   <meta name="twitter:description" content="Rénovation intérieure de qualité. Devis gratuit 48h. ☎ 07 68 81 31 52.">
-  <meta name="twitter:image" content="https://www.fgm-renov.fr/img/apres2.JPG">
+  <meta name="twitter:image" content="https://www.fgm-renov.fr/img/og-fgm-renov.JPG">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=3">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-  <!-- Preconnect / Fonts -->
+  <!-- Hero LCP : préchargement responsive de l'image auto-hébergée -->
+  <link rel="preload" as="image" fetchpriority="high"
+        href="/img/hero-maison.JPG"
+        imagesrcset="/img/hero-maison-mobile.JPG 800w, /img/hero-maison.JPG 1600w"
+        imagesizes="100vw">
+
+  <link rel="stylesheet" href="/css/style.css?v=5">
+
+  <!-- Polices : chargement non bloquant (évite le render-blocking sur le LCP) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" media="print" onload="this.media='all'"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700;900&display=swap">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700;900&display=swap">
+  </noscript>
 
-  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80" crossorigin>
-  <link rel="stylesheet" href="/css/style.css?v=4">
-
-  <!-- JSON-LD : LocalBusiness -->
+  <!-- JSON-LD : @graph complet (LocalBusiness · Services · FAQ · WebSite · Breadcrumb) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "HomeAndConstructionBusiness",
-    "@id": "https://www.fgm-renov.fr/#business",
-    "name": "FGM RENOV",
-    "image": "https://www.fgm-renov.fr/img/apres2.JPG",
-    "url": "https://www.fgm-renov.fr/",
-    "telephone": "+33768813152",
-    "email": "fgmrenov@gmail.com",
-    "priceRange": "€€",
-    "description": "Artisan rénovation intérieure à Saint-Philibert-sur-Risle (27) : salle de bain, carrelage, faïence, placo, parquet, cuisine, volets roulants. Devis gratuit 48h.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Saint-Philibert-sur-Risle",
-      "postalCode": "27290",
-      "addressRegion": "Normandie",
-      "addressCountry": "FR"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 49.2944,
-      "longitude": 0.5872
-    },
-    "areaServed": [
-      { "@type": "City", "name": "Saint-Philibert-sur-Risle" },
-      { "@type": "City", "name": "Pont-Audemer" },
-      { "@type": "City", "name": "Montfort-sur-Risle" },
-      { "@type": "City", "name": "Brionne" },
-      { "@type": "City", "name": "Bernay" },
-      { "@type": "City", "name": "Bourg-Achard" },
-      { "@type": "City", "name": "Beuzeville" },
-      { "@type": "City", "name": "Bourgtheroulde" }
-    ],
-    "openingHoursSpecification": [
+    "@graph": [
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "08:00",
-        "closes": "19:00"
+        "@type": ["HomeAndConstructionBusiness", "GeneralContractor"],
+        "@id": "https://www.fgm-renov.fr/#business",
+        "name": "FGM RENOV",
+        "alternateName": "FGM RENOV - Artisan r\u00e9novation int\u00e9rieure",
+        "image": "https://www.fgm-renov.fr/img/og-fgm-renov.JPG",
+        "logo": "https://www.fgm-renov.fr/favicon.svg",
+        "url": "https://www.fgm-renov.fr/",
+        "telephone": "+33768813152",
+        "email": "fgmrenov@gmail.com",
+        "priceRange": "\u20ac\u20ac",
+        "currenciesAccepted": "EUR",
+        "paymentAccepted": "Esp\u00e8ces, Ch\u00e8que, Virement bancaire",
+        "description": "Artisan r\u00e9novation int\u00e9rieure \u00e0 Saint-Philibert-sur-Risle (27) : salle de bain, carrelage, fa\u00efence, placo, parquet, cuisine, volets roulants. Devis gratuit 48h, d\u00e9pannage rapide. 10 ans d'exp\u00e9rience.",
+        "slogan": "Votre int\u00e9rieur, notre savoir-faire.",
+        "foundingDate": "2016",
+        "knowsLanguage": "fr-FR",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Saint-Philibert-sur-Risle",
+          "postalCode": "27290",
+          "addressRegion": "Normandie",
+          "addressCountry": "FR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 49.2944,
+          "longitude": 0.5872
+        },
+        "hasMap": "https://www.google.com/maps/search/?api=1&query=49.2944,0.5872",
+        "areaServed": [
+          { "@type": "City", "name": "Saint-Philibert-sur-Risle" },
+          { "@type": "City", "name": "Pont-Audemer" },
+          { "@type": "City", "name": "Montfort-sur-Risle" },
+          { "@type": "City", "name": "Brionne" },
+          { "@type": "City", "name": "Bernay" },
+          { "@type": "City", "name": "Bourg-Achard" },
+          { "@type": "City", "name": "Beuzeville" },
+          { "@type": "City", "name": "Bourgtheroulde" },
+          { "@type": "City", "name": "Routot" },
+          { "@type": "City", "name": "Cormeilles" }
+        ],
+        "serviceArea": {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": 49.2944,
+            "longitude": 0.5872
+          },
+          "geoRadius": "40000"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "19:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "17:00"
+          }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Services FGM RENOV",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "R\u00e9novation de salle de bain",
+                "serviceType": "R\u00e9novation salle de bain cl\u00e9 en main",
+                "description": "R\u00e9novation compl\u00e8te : plomberie, carrelage, fa\u00efence, vasque, douche \u00e0 l'italienne, WC suspendus, s\u00e8che-serviettes.",
+                "provider": { "@id": "https://www.fgm-renov.fr/#business" },
+                "areaServed": { "@type": "AdministrativeArea", "name": "Vall\u00e9e de la Risle, Eure (27)" }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Pose de carrelage et fa\u00efence",
+                "serviceType": "Carrelage et fa\u00efence",
+                "description": "Pose de carrelage et fa\u00efence pour sols et murs, int\u00e9rieur comme ext\u00e9rieur, grand et petit format.",
+                "provider": { "@id": "https://www.fgm-renov.fr/#business" },
+                "areaServed": { "@type": "AdministrativeArea", "name": "Vall\u00e9e de la Risle, Eure (27)" }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Placo, cloisons BA13 et faux plafonds",
+                "serviceType": "Pl\u00e2trerie et cloisons s\u00e8ches",
+                "description": "Cloisons BA13, doublage, faux plafonds, isolation phonique et thermique, finitions pr\u00eates \u00e0 peindre.",
+                "provider": { "@id": "https://www.fgm-renov.fr/#business" },
+                "areaServed": { "@type": "AdministrativeArea", "name": "Vall\u00e9e de la Risle, Eure (27)" }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Pose de parquet et sols",
+                "serviceType": "Rev\u00eatements de sol",
+                "description": "Parquet flottant, massif, stratifi\u00e9 ou lames PVC. D\u00e9pose de l'ancien rev\u00eatement, ragr\u00e9age, pose et finitions.",
+                "provider": { "@id": "https://www.fgm-renov.fr/#business" },
+                "areaServed": { "@type": "AdministrativeArea", "name": "Vall\u00e9e de la Risle, Eure (27)" }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Installation de cuisine \u00e9quip\u00e9e",
+                "serviceType": "Pose de cuisine",
+                "description": "Pose et montage de cuisines \u00e9quip\u00e9es toutes marques : plomberie, \u00e9lectricit\u00e9, plan de travail, cr\u00e9dence, finitions.",
+                "provider": { "@id": "https://www.fgm-renov.fr/#business" },
+                "areaServed": { "@type": "AdministrativeArea", "name": "Vall\u00e9e de la Risle, Eure (27)" }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Pose et d\u00e9pannage de volets roulants",
+                "serviceType": "Volets roulants et d\u00e9pannage",
+                "description": "Pose, motorisation et d\u00e9pannage de volets roulants toutes marques. Intervention rapide en Vall\u00e9e de la Risle.",
+                "provider": { "@id": "https://www.fgm-renov.fr/#business" },
+                "areaServed": { "@type": "AdministrativeArea", "name": "Vall\u00e9e de la Risle, Eure (27)" }
+              }
+            }
+          ]
+        },
+        "sameAs": [],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5.0",
+          "bestRating": "5",
+          "worstRating": "1",
+          "ratingCount": "3",
+          "reviewCount": "3"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Client v\u00e9rifi\u00e9" },
+            "datePublished": "2025-10-27",
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "Artisan tr\u00e8s professionnel, travail soign\u00e9 et bien r\u00e9alis\u00e9. Que je reprendrais pour d'autres travaux. Je recommande FGM RENOV."
+          },
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Aur\u00e9lie" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "Tr\u00e8s professionnel, agr\u00e9able, ponctuel avec de bons tarifs."
+          },
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Client AlloVoisins" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "Professionnel s\u00e9rieux et comp\u00e9tent, tr\u00e8s p\u00e9dagogue, en qui vous pouvez avoir confiance."
+          }
+        ]
       },
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Saturday",
-        "opens": "09:00",
-        "closes": "17:00"
-      }
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Services FGM RENOV",
-      "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Rénovation salle de bain" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pose de carrelage et faïence" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Placo, cloisons BA13, faux plafonds" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pose de parquet et sols" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Installation de cuisine" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pose et dépannage de volets roulants" } }
-      ]
-    },
-    "sameAs": [],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "bestRating": "5",
-      "ratingCount": "3",
-      "reviewCount": "3"
-    },
-    "review": [
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Client vérifié" },
-        "datePublished": "2025-10-27",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "reviewBody": "Artisan très professionnel, travail soigné et bien réalisé. Que je reprendrais pour d'autres travaux. Je recommande FGM RENOV."
+        "@type": "WebSite",
+        "@id": "https://www.fgm-renov.fr/#website",
+        "url": "https://www.fgm-renov.fr/",
+        "name": "FGM RENOV",
+        "description": "Artisan r\u00e9novation int\u00e9rieure en Vall\u00e9e de la Risle (27)",
+        "publisher": { "@id": "https://www.fgm-renov.fr/#business" },
+        "inLanguage": "fr-FR"
       },
       {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Aurélie" },
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "reviewBody": "Très professionnel, agréable, ponctuel avec de bons tarifs."
+        "@type": "WebPage",
+        "@id": "https://www.fgm-renov.fr/#webpage",
+        "url": "https://www.fgm-renov.fr/",
+        "name": "FGM RENOV \u2014 Artisan R\u00e9novation Saint-Philibert-sur-Risle (27)",
+        "isPartOf": { "@id": "https://www.fgm-renov.fr/#website" },
+        "about": { "@id": "https://www.fgm-renov.fr/#business" },
+        "inLanguage": "fr-FR",
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [".h1", ".hero-card .overline", "#faq-title"]
+        }
       },
       {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Client AlloVoisins" },
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "reviewBody": "Professionnel sérieux et compétent, très pédagogue, en qui vous pouvez avoir confiance."
+        "@type": "BreadcrumbList",
+        "@id": "https://www.fgm-renov.fr/#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.fgm-renov.fr/" },
+          { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.fgm-renov.fr/#services" },
+          { "@type": "ListItem", "position": 3, "name": "R\u00e9alisations", "item": "https://www.fgm-renov.fr/#realisations" },
+          { "@type": "ListItem", "position": 4, "name": "Contact", "item": "https://www.fgm-renov.fr/#contact" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.fgm-renov.fr/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Quel est le d\u00e9lai pour obtenir un devis chez FGM RENOV ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "FGM RENOV fournit un devis gratuit et d\u00e9taill\u00e9 sous 48 heures apr\u00e8s la visite sur place. La visite est sans engagement et permet de chiffrer pr\u00e9cis\u00e9ment les travaux, sans frais cach\u00e9s."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Dans quelles communes FGM RENOV intervient-il ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Bas\u00e9 \u00e0 Saint-Philibert-sur-Risle (27290), FGM RENOV intervient dans un rayon de 40 km : Pont-Audemer, Montfort-sur-Risle, Brionne, Bernay, Bourg-Achard, Beuzeville, Bourgtheroulde, Routot et Cormeilles. Au-del\u00e0, un d\u00e9placement reste possible sur devis."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Combien de temps dure la r\u00e9novation d'une salle de bain ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Une r\u00e9novation compl\u00e8te de salle de bain prend g\u00e9n\u00e9ralement entre 1 et 3 semaines selon la surface et l'ampleur des travaux : d\u00e9pose de l'existant, plomberie, \u00e9lectricit\u00e9, carrelage, fa\u00efence puis pose des \u00e9quipements. Le planning pr\u00e9cis est communiqu\u00e9 avec le devis."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "FGM RENOV intervient-il en urgence pour un d\u00e9pannage ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oui. Pour un volet roulant bloqu\u00e9, une fuite d'eau, un robinet d\u00e9fectueux ou un carrelage cass\u00e9, FGM RENOV rappelle sous 2 heures ouvr\u00e9es et intervient dans la journ\u00e9e lorsque c'est possible. Un diagnostic et un devis sont \u00e9tablis avant toute intervention. T\u00e9l\u00e9phone : 07 68 81 31 52."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Faut-il vider la pi\u00e8ce avant le d\u00e9but des travaux ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Il est pr\u00e9f\u00e9rable de d\u00e9garnir la pi\u00e8ce des objets personnels et petits meubles. FGM RENOV se charge de la protection des surfaces conserv\u00e9es, de la d\u00e9pose des \u00e9l\u00e9ments \u00e0 remplacer et de l'\u00e9vacuation des gravats en fin de chantier."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quels types de travaux de r\u00e9novation int\u00e9rieure r\u00e9alise FGM RENOV ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "FGM RENOV r\u00e9alise la r\u00e9novation de salle de bain, la pose de carrelage et de fa\u00efence, les cloisons placo BA13 et faux plafonds, la pose de parquet et de sols souples, l'installation de cuisines \u00e9quip\u00e9es, ainsi que la pose, la motorisation et le d\u00e9pannage de volets roulants."
+            }
+          }
+        ]
       }
     ]
   }
@@ -169,6 +348,7 @@
         <li><a href="#depannage">Dépannage</a></li>
         <li><a href="#avis">Avis</a></li>
         <li><a href="#zone">Zone</a></li>
+        <li><a href="#faq">FAQ</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -286,9 +466,9 @@
 
         <figure class="compare-item">
           <div class="compare" data-compare aria-label="Comparateur avant/après — cuisine équipée">
-            <img class="compare-after" src="/img/apres1.JPG" alt="Après : cuisine équipée blanche avec plan de travail, crédence et plaque induction, posée par FGM RENOV" loading="lazy" width="1200" height="1600">
+            <img class="compare-after" src="/img/apres1.JPG" alt="Après : cuisine équipée blanche avec plan de travail, crédence et plaque induction, posée par FGM RENOV" loading="lazy" width="800" height="1066">
             <div class="compare-before">
-              <img src="/img/avant1.JPG" alt="Avant : pièce vide avec ancienne moquette bleue, sans aménagement de cuisine" loading="lazy" width="1200" height="1600">
+              <img src="/img/avant1.JPG" alt="Avant : pièce vide avec ancienne moquette bleue, sans aménagement de cuisine" loading="lazy" width="800" height="1066">
             </div>
             <div class="compare-handle" aria-hidden="true"><span>⇔</span></div>
             <span class="compare-lbl compare-lbl-av">Avant</span>
@@ -300,9 +480,9 @@
 
         <figure class="compare-item">
           <div class="compare" data-compare aria-label="Comparateur avant/après — salle d'eau et WC">
-            <img class="compare-after" src="/img/apres2.JPG" alt="Après : salle d'eau rénovée — travertin au sol, faïence bleu clair, WC suspendu, vasque pierre, robinetterie dorée" loading="lazy" width="1200" height="1600">
+            <img class="compare-after" src="/img/apres2.JPG" alt="Après : salle d'eau rénovée — travertin au sol, faïence bleu clair, WC suspendu, vasque pierre, robinetterie dorée" loading="lazy" width="800" height="1066">
             <div class="compare-before">
-              <img src="/img/avant2.JPG" alt="Avant : ancienne salle d'eau avec carrelage blanc fleuri et plomberie apparente" loading="lazy" width="1200" height="1600">
+              <img src="/img/avant2.JPG" alt="Avant : ancienne salle d'eau avec carrelage blanc fleuri et plomberie apparente" loading="lazy" width="800" height="1066">
             </div>
             <div class="compare-handle" aria-hidden="true"><span>⇔</span></div>
             <span class="compare-lbl compare-lbl-av">Avant</span>
@@ -314,9 +494,9 @@
 
         <figure class="compare-item">
           <div class="compare" data-compare aria-label="Comparateur avant/après — douche à l'italienne">
-            <img class="compare-after" src="/img/apres3.JPG" alt="Après : douche à l'italienne — faïence zellige vert sauge, receveur extra-plat, robinetterie dorée" loading="lazy" width="1200" height="1600">
+            <img class="compare-after" src="/img/apres3.JPG" alt="Après : douche à l'italienne — faïence zellige vert sauge, receveur extra-plat, robinetterie dorée" loading="lazy" width="800" height="1066">
             <div class="compare-before">
-              <img src="/img/avant3.JPG" alt="Avant : ancienne salle d'eau avec carrelage fleuri et plomberie apparente" loading="lazy" width="1200" height="1600">
+              <img src="/img/avant3.JPG" alt="Avant : ancienne salle d'eau avec carrelage fleuri et plomberie apparente" loading="lazy" width="800" height="1066">
             </div>
             <div class="compare-handle" aria-hidden="true"><span>⇔</span></div>
             <span class="compare-lbl compare-lbl-av">Avant</span>
@@ -331,15 +511,15 @@
       <!-- Galerie complémentaire -->
       <div class="gallery-extra" aria-label="Autres réalisations">
         <figure>
-          <img src="/img/2213880919008131217.JPG" alt="Douche à l'italienne : faïence bleue verticale, pommeau pluie doré brossé" loading="lazy" width="800" height="1067">
+          <img src="/img/2213880919008131217.JPG" alt="Douche à l'italienne : faïence bleue verticale, pommeau pluie doré brossé" loading="lazy" width="800" height="1066">
           <figcaption>Douche à l'italienne — faïence zellige bleue</figcaption>
         </figure>
         <figure>
-          <img src="/img/8358812650224980286.JPG" alt="Salon rénové : mur peint vert, parquet clair, ambiance lumineuse" loading="lazy" width="800" height="1067">
+          <img src="/img/8358812650224980286.JPG" alt="Salon rénové : mur peint vert, parquet clair, ambiance lumineuse" loading="lazy" width="800" height="1066">
           <figcaption>Salon — peinture &amp; parquet</figcaption>
         </figure>
         <figure>
-          <img src="/img/8386116926733103983.JPG" alt="Salle d'eau rénovée : sèche-serviettes doré, vasque pierre sur meuble bois massif, robinetterie dorée" loading="lazy" width="800" height="1067">
+          <img src="/img/8386116926733103983.JPG" alt="Salle d'eau rénovée : sèche-serviettes doré, vasque pierre sur meuble bois massif, robinetterie dorée" loading="lazy" width="800" height="1066">
           <figcaption>Sèche-serviettes &amp; vasque pierre</figcaption>
         </figure>
       </div>
@@ -510,6 +690,63 @@
     </div>
   </section>
 
+  <!-- FAQ (contenu visible correspondant au schema FAQPage) -->
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="kicker">Questions fréquentes</p>
+        <h2 id="faq-title">Vos questions, nos réponses</h2>
+        <hr>
+      </header>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Quel est le délai pour obtenir un devis&nbsp;?</summary>
+          <div class="faq-answer">
+            <p>FGM&nbsp;RENOV fournit un <strong>devis gratuit et détaillé sous 48&nbsp;heures</strong> après la visite sur place. La visite est sans engagement et permet de chiffrer précisément les travaux, sans frais cachés.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Dans quelles communes intervenez-vous&nbsp;?</summary>
+          <div class="faq-answer">
+            <p>Basés à <strong>Saint-Philibert-sur-Risle (27290)</strong>, nous intervenons dans un rayon de 40&nbsp;km : Pont-Audemer, Montfort-sur-Risle, Brionne, Bernay, Bourg-Achard, Beuzeville, Bourgtheroulde, Routot et Cormeilles. Au-delà, un déplacement reste possible sur devis.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Combien de temps dure la rénovation d'une salle de bain&nbsp;?</summary>
+          <div class="faq-answer">
+            <p>Une rénovation complète prend généralement <strong>entre 1 et 3 semaines</strong> selon la surface et l'ampleur des travaux : dépose de l'existant, plomberie, électricité, carrelage, faïence puis pose des équipements. Le planning précis vous est communiqué avec le devis.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Intervenez-vous en urgence pour un dépannage&nbsp;?</summary>
+          <div class="faq-answer">
+            <p>Oui. Pour un volet roulant bloqué, une fuite d'eau, un robinet défectueux ou un carrelage cassé, nous rappelons <strong>sous 2&nbsp;heures ouvrées</strong> et intervenons dans la journée lorsque c'est possible. Un diagnostic et un devis sont établis avant toute intervention. Appelez le <a href="tel:+33768813152">07&nbsp;68&nbsp;81&nbsp;31&nbsp;52</a>.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Faut-il vider la pièce avant le début des travaux&nbsp;?</summary>
+          <div class="faq-answer">
+            <p>Il est préférable de dégarnir la pièce des objets personnels et petits meubles. Nous nous chargeons de la <strong>protection des surfaces conservées</strong>, de la dépose des éléments à remplacer et de l'<strong>évacuation des gravats</strong> en fin de chantier.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Quels types de travaux réalisez-vous&nbsp;?</summary>
+          <div class="faq-answer">
+            <p>Rénovation de salle de bain, pose de carrelage et de faïence, cloisons placo BA13 et faux plafonds, pose de parquet et de sols souples, installation de cuisines équipées, ainsi que la pose, la motorisation et le dépannage de volets roulants.</p>
+          </div>
+        </details>
+      </div>
+
+      <p class="faq-cta">Une autre question&nbsp;? <a href="tel:+33768813152">Appelez-nous au 07&nbsp;68&nbsp;81&nbsp;31&nbsp;52</a> ou <a href="#contact">écrivez-nous</a>.</p>
+    </div>
+  </section>
+
   <!-- Contact -->
   <section class="contact" id="contact" aria-labelledby="contact-title">
     <div class="container contact-grid">
@@ -644,6 +881,7 @@
         <li><a href="#realisations">Réalisations</a></li>
         <li><a href="#depannage">Dépannage</a></li>
         <li><a href="#zone">Zone d'intervention</a></li>
+        <li><a href="#faq">Questions fréquentes</a></li>
       </ul>
       <p class="footer-zone" style="margin-top:14px;">Pont-Audemer · Bernay · Beuzeville · Montfort-sur-Risle</p>
     </div>
@@ -666,6 +904,6 @@
   </a>
 </div>
 
-<script src="/js/main.js?v=3" defer></script>
+<script src="/js/main.js?v=5" defer></script>
 </body>
 </html>

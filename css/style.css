@@ -352,10 +352,16 @@ body:has(.nav-menu.is-open) .nav { position: fixed; top: 0; left: 0; right: 0; }
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80');
+  /* Image auto-hébergée : mobile par défaut, desktop via media query.
+     Évite la dépendance à un CDN tiers (DNS + TLS + latence sur le LCP). */
+  background-image: url('/img/hero-maison-mobile.JPG');
   background-size: cover;
   background-position: center center;
+  background-color: #2A2420; /* couleur d'attente = pas de flash blanc */
   z-index: 0;
+}
+@media (min-width: 800px) {
+  .hero-bg { background-image: url('/img/hero-maison.JPG'); }
 }
 .hero-overlay {
   position: absolute;
@@ -858,6 +864,76 @@ section { padding: 72px 0; }
   font-size: 13px;
   letter-spacing: .05em;
   border-radius: 999px;
+}
+
+/* ────────────────── FAQ ────────────────── */
+.faq { background: var(--cream-dark); }
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 860px;
+}
+.faq-item {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--terra);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.faq-item summary {
+  padding: 18px 48px 18px 20px;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(18px, 3.4vw, 22px);
+  font-weight: 600;
+  color: var(--dark);
+  cursor: pointer;
+  position: relative;
+  list-style: none;
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  transition: color .2s;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: '+';
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: var(--terra-dark);
+  transition: transform .25s var(--ease);
+  line-height: 1;
+}
+.faq-item[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+.faq-item summary:hover { color: var(--terra-dark); }
+.faq-answer {
+  padding: 0 20px 20px;
+  color: var(--warm);
+  font-size: 15px;
+  line-height: 1.75;
+}
+.faq-answer strong { color: var(--dark); font-weight: 700; }
+.faq-answer a {
+  color: var(--terra-dark);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.faq-cta {
+  margin-top: 28px;
+  font-size: 15px;
+  color: var(--warm);
+}
+.faq-cta a {
+  color: var(--terra-dark);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 /* ────────────────── Contact ────────────────── */
