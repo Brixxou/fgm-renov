@@ -30,13 +30,6 @@
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
-# Modèle de facture : outil interne, jamais indexé
-[[headers]]
-  for = "/facture/*"
-  [headers.values]
-    X-Robots-Tag = "noindex, nofollow, noarchive"
-    Cache-Control = "private, no-store"
-
 [[redirects]]
   from = "https://fgm-renov.netlify.app/*"
   to = "https://www.fgm-renov.fr/:splat"

@@ -1,6 +1,6 @@
 # FGM RENOV — Site vitrine
 
-Site vitrine pour **FGM RENOV**, artisan rénovation intérieure à Saint-Philibert-sur-Risle (27290).
+Site vitrine pour **FGM RENOV**, artisan rénovation intérieure à Saint-Philbert-sur-Risle (27290).
 Concept 1 — "L'Atelier" (warm · premium · artisanal).
 
 ## Stack
@@ -44,8 +44,8 @@ Concept 1 — "L'Atelier" (warm · premium · artisanal).
 
 - **Tel** : 07 68 81 31 52
 - **Email** : fgmrenov@gmail.com
-- **Base** : Saint-Philibert-sur-Risle (27290)
-- **Zone** : Saint-Philibert-sur-Risle, Pont-Audemer, Montfort-sur-Risle, Brionne, Bernay, Bourg-Achard, Beuzeville, Bourgtheroulde, 40 km autour.
+- **Base** : Saint-Philbert-sur-Risle (27290)
+- **Zone** : Saint-Philbert-sur-Risle, Pont-Audemer, Montfort-sur-Risle, Brionne, Bernay, Bourg-Achard, Beuzeville, Bourgtheroulde, 40 km autour.
 
 ## Éléments SEO à compléter après déploiement
 
