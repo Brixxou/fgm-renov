@@ -33,7 +33,7 @@ Concept 1 — "L'Atelier" (warm · premium · artisanal).
 2. Sur [Netlify](https://app.netlify.com) : **Add new site → Import from Git**.
 3. Sélectionner le repo, laisser `Publish directory = .`, pas de build command.
 4. Déployer. Les formulaires Netlify sont automatiquement détectés.
-5. (Optionnel) Ajouter le domaine `www.fgm-renov.fr` dans **Domain management**.
+5. Domaine : `www.fgmrenov.fr` (acheté chez OVH), ajouté dans **Domain management** et défini comme domaine principal.
 
 ### Option 2 — GitHub Pages
 
@@ -49,7 +49,8 @@ Concept 1 — "L'Atelier" (warm · premium · artisanal).
 
 ## Éléments SEO à compléter après déploiement
 
-- [ ] Remplacer `www.fgm-renov.fr` par le vrai domaine (index.html, sitemap.xml, robots.txt, netlify.toml).
+- [x] Domaine `www.fgmrenov.fr` renseigné partout (index.html, sitemap.xml, robots.txt).
+- [x] Redirection `fgmrenov.netlify.app` → `www.fgmrenov.fr` active (netlify.toml).
 - [ ] Créer la fiche **Google Business Profile** puis ajouter l'URL dans `sameAs` du JSON-LD.
 - [ ] Soumettre `sitemap.xml` dans Google Search Console.
 - [ ] Générer `apple-touch-icon.png` (180×180 px).

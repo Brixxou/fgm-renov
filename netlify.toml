@@ -30,8 +30,11 @@
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
+# ── Redirection vers le domaine officiel ──
+# L'adresse technique Netlify renvoie vers le domaine principal : une seule URL indexée.
+# (fgmrenov.fr → www.fgmrenov.fr est géré par Netlify via le « primary domain ».)
 [[redirects]]
-  from = "https://fgm-renov.netlify.app/*"
-  to = "https://www.fgm-renov.fr/:splat"
+  from = "https://fgmrenov.netlify.app/*"
+  to = "https://www.fgmrenov.fr/:splat"
   status = 301
   force = true

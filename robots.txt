@@ -1,4 +1,4 @@
-# FGM RENOV — https://www.fgm-renov.fr
+# FGM RENOV — https://www.fgmrenov.fr
 
 # ── Moteurs de recherche classiques ──
 User-agent: *
@@ -48,4 +48,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://www.fgm-renov.fr/sitemap.xml
+Sitemap: https://www.fgmrenov.fr/sitemap.xml

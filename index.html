@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="#F7F2EA">
+  <meta name="theme-color" content="#1A1614">
 
-  <title>FGM RENOV — Artisan Rénovation Saint-Philbert-sur-Risle (27) · Salle de bain, Carrelage, Placo, Dépannage</title>
-  <meta name="description" content="Artisan rénovation intérieure à Saint-Philbert-sur-Risle (Eure). Salle de bain, carrelage, faïence, placo, parquet, cuisine, volets roulants. Devis gratuit sous 48h, dépannage rapide. 10 ans d'expérience. ☎ 07 68 81 31 52.">
+  <title>Artisan rénovation Saint-Philbert-sur-Risle &amp; Pont-Audemer (27) | FGM RENOV</title>
+  <meta name="description" content="Artisan rénovation basé à Saint-Philbert-sur-Risle, près de Pont-Audemer (27) : salle de bain, carrelage, placo, parquet, cuisine. Devis gratuit sous 48h.">
   <meta name="keywords" content="artisan Saint-Philbert-sur-Risle, artisan Pont-Audemer, rénovation intérieure Eure, salle de bain, carrelage Bernay, faïence, placo BA13, parquet, cuisine, volets roulants, dépannage, Bourg-Achard, Beuzeville, Montfort-sur-Risle, Brionne, Vallée de la Risle">
   <meta name="author" content="FGM RENOV">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="geo.region" content="FR-27">
   <meta name="geo.placename" content="Saint-Philbert-sur-Risle">
-  <meta name="geo.position" content="49.2944;0.5872">
-  <meta name="ICBM" content="49.2944, 0.5872">
-  <link rel="canonical" href="https://www.fgm-renov.fr/">
+  <meta name="geo.position" content="49.2798;0.6499">
+  <meta name="ICBM" content="49.2798, 0.6499">
+  <link rel="canonical" href="https://www.fgmrenov.fr/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -22,8 +22,8 @@
   <meta property="og:site_name" content="FGM RENOV">
   <meta property="og:title" content="FGM RENOV — Artisan Rénovation en Vallée de la Risle">
   <meta property="og:description" content="Rénovation intérieure à Saint-Philbert-sur-Risle, Pont-Audemer et toute la Vallée de la Risle. Salle de bain, carrelage, placo, parquet, cuisine. Devis gratuit sous 48h.">
-  <meta property="og:url" content="https://www.fgm-renov.fr/">
-  <meta property="og:image" content="https://www.fgm-renov.fr/img/og-fgm-renov.JPG">
+  <meta property="og:url" content="https://www.fgmrenov.fr/">
+  <meta property="og:image" content="https://www.fgmrenov.fr/img/og-fgm-renov.JPG">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="FGM RENOV — artisan rénovation intérieure en Vallée de la Risle">
@@ -32,19 +32,21 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="FGM RENOV — Artisan Rénovation Vallée de la Risle">
   <meta name="twitter:description" content="Rénovation intérieure de qualité. Devis gratuit 48h. ☎ 07 68 81 31 52.">
-  <meta name="twitter:image" content="https://www.fgm-renov.fr/img/og-fgm-renov.JPG">
+  <meta name="twitter:image" content="https://www.fgmrenov.fr/img/og-fgm-renov.JPG">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=3">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
 
-  <!-- Hero LCP : préchargement responsive de l'image auto-hébergée -->
-  <link rel="preload" as="image" fetchpriority="high"
-        href="/img/hero-maison.JPG"
-        imagesrcset="/img/hero-maison-mobile.JPG 800w, /img/hero-maison.JPG 1600w"
-        imagesizes="100vw">
+  <!-- Hero LCP : préchargement calé sur la même media query que le CSS (.hero-bg).
+       Un imagesrcset choisirait selon la densité d'écran (375 px × DPR 3 = 1125 px → version
+       desktop) alors que le CSS affiche la version mobile : double téléchargement sur iPhone. -->
+  <link rel="preload" as="image" fetchpriority="high" href="/img/hero-maison-mobile.JPG" media="(max-width: 799px)">
+  <link rel="preload" as="image" fetchpriority="high" href="/img/hero-maison.JPG" media="(min-width: 800px)">
 
-  <link rel="stylesheet" href="/css/style.css?v=5">
+  <link rel="stylesheet" href="/css/style.css?v=7">
 
   <!-- Polices : chargement non bloquant (évite le render-blocking sur le LCP) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,12 +64,23 @@
     "@graph": [
       {
         "@type": ["HomeAndConstructionBusiness", "GeneralContractor"],
-        "@id": "https://www.fgm-renov.fr/#business",
+        "@id": "https://www.fgmrenov.fr/#business",
         "name": "FGM RENOV",
         "alternateName": "FGM RENOV - Artisan r\u00e9novation int\u00e9rieure",
-        "image": "https://www.fgm-renov.fr/img/og-fgm-renov.JPG",
-        "logo": "https://www.fgm-renov.fr/favicon.svg",
-        "url": "https://www.fgm-renov.fr/",
+        "image": "https://www.fgmrenov.fr/img/og-fgm-renov.JPG",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.fgmrenov.fr/img/logo-fgm-renov-512.png",
+          "width": 512,
+          "height": 512
+        },
+        "legalName": "Filipe ALBINO TEIXEIRA, entrepreneur individuel",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "SIRET",
+          "value": "84308766900035"
+        },
+        "url": "https://www.fgmrenov.fr/",
         "telephone": "+33768813152",
         "email": "fgmrenov@gmail.com",
         "priceRange": "\u20ac\u20ac",
@@ -75,7 +88,7 @@
         "paymentAccepted": "Esp\u00e8ces, Ch\u00e8que, Virement bancaire",
         "description": "Artisan r\u00e9novation int\u00e9rieure \u00e0 Saint-Philbert-sur-Risle (27) : salle de bain, carrelage, fa\u00efence, placo, parquet, cuisine, volets roulants. Devis gratuit 48h, d\u00e9pannage rapide. 10 ans d'exp\u00e9rience.",
         "slogan": "Votre int\u00e9rieur, notre savoir-faire.",
-        "foundingDate": "2016",
+        "foundingDate": "2018",
         "knowsLanguage": "fr-FR",
         "address": {
           "@type": "PostalAddress",
@@ -86,30 +99,46 @@
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": 49.2944,
-          "longitude": 0.5872
+          "latitude": 49.2798,
+          "longitude": 0.6499
         },
-        "hasMap": "https://www.google.com/maps/search/?api=1&query=49.2944,0.5872",
+        "hasMap": "https://www.google.com/maps/search/?api=1&query=49.2798,0.6499",
         "areaServed": [
           { "@type": "City", "name": "Saint-Philbert-sur-Risle" },
-          { "@type": "City", "name": "Pont-Audemer" },
           { "@type": "City", "name": "Montfort-sur-Risle" },
+          { "@type": "City", "name": "Pont-Audemer" },
           { "@type": "City", "name": "Brionne" },
-          { "@type": "City", "name": "Bernay" },
+          { "@type": "City", "name": "Nassandres sur Risle" },
+          { "@type": "City", "name": "Beaumont-le-Roger" },
+          { "@type": "City", "name": "Le Neubourg" },
           { "@type": "City", "name": "Bourg-Achard" },
-          { "@type": "City", "name": "Beuzeville" },
-          { "@type": "City", "name": "Bourgtheroulde" },
           { "@type": "City", "name": "Routot" },
-          { "@type": "City", "name": "Cormeilles" }
+          { "@type": "City", "name": "Bourgtheroulde" },
+          { "@type": "City", "name": "Bosroumois" },
+          { "@type": "City", "name": "Le Thuit de l'Oison" },
+          { "@type": "City", "name": "Saint-Ouen-de-Thouberville" },
+          { "@type": "City", "name": "Beuzeville" },
+          { "@type": "City", "name": "Cormeilles" },
+          { "@type": "City", "name": "\u00c9paignes" },
+          { "@type": "City", "name": "Bernay" },
+          { "@type": "City", "name": "Thiberville" },
+          { "@type": "City", "name": "Honfleur" },
+          { "@type": "City", "name": "Lisieux" },
+          { "@type": "City", "name": "Rouen" },
+          { "@type": "City", "name": "Elbeuf" },
+          { "@type": "City", "name": "Grand-Couronne" },
+          { "@type": "City", "name": "Le Havre" },
+          { "@type": "City", "name": "Port-J\u00e9r\u00f4me-sur-Seine" },
+          { "@type": "City", "name": "Lillebonne" }
         ],
         "serviceArea": {
           "@type": "GeoCircle",
           "geoMidpoint": {
             "@type": "GeoCoordinates",
-            "latitude": 49.2944,
-            "longitude": 0.5872
+            "latitude": 49.2798,
+            "longitude": 0.6499
           },
-          "geoRadius": "40000"
+          "geoRadius": "50000"
         },
         "openingHoursSpecification": [
           {
@@ -136,7 +165,7 @@
                 "name": "R\u00e9novation de salle de bain",
                 "serviceType": "R\u00e9novation salle de bain cl\u00e9 en main",
                 "description": "R\u00e9novation compl\u00e8te : plomberie, carrelage, fa\u00efence, vasque, douche \u00e0 l'italienne, WC suspendus, s\u00e8che-serviettes.",
-                "provider": { "@id": "https://www.fgm-renov.fr/#business" },
+                "provider": { "@id": "https://www.fgmrenov.fr/#business" },
                 "areaServed": { "@type": "AdministrativeArea", "name": "Vall\u00e9e de la Risle, Eure (27)" }
               }
             },
@@ -147,7 +176,7 @@
                 "name": "Pose de carrelage et fa\u00efence",
                 "serviceType": "Carrelage et fa\u00efence",
                 "description": "Pose de carrelage et fa\u00efence pour sols et murs, int\u00e9rieur comme ext\u00e9rieur, grand et petit format.",
-                "provider": { "@id": "https://www.fgm-renov.fr/#business" },
+                "provider": { "@id": "https://www.fgmrenov.fr/#business" },
                 "areaServed": { "@type": "AdministrativeArea", "name": "Vall\u00e9e de la Risle, Eure (27)" }
               }
             },
@@ -158,7 +187,7 @@
                 "name": "Placo, cloisons BA13 et faux plafonds",
                 "serviceType": "Pl\u00e2trerie et cloisons s\u00e8ches",
                 "description": "Cloisons BA13, doublage, faux plafonds, isolation phonique et thermique, finitions pr\u00eates \u00e0 peindre.",
-                "provider": { "@id": "https://www.fgm-renov.fr/#business" },
+                "provider": { "@id": "https://www.fgmrenov.fr/#business" },
                 "areaServed": { "@type": "AdministrativeArea", "name": "Vall\u00e9e de la Risle, Eure (27)" }
               }
             },
@@ -169,7 +198,7 @@
                 "name": "Pose de parquet et sols",
                 "serviceType": "Rev\u00eatements de sol",
                 "description": "Parquet flottant, massif, stratifi\u00e9 ou lames PVC. D\u00e9pose de l'ancien rev\u00eatement, ragr\u00e9age, pose et finitions.",
-                "provider": { "@id": "https://www.fgm-renov.fr/#business" },
+                "provider": { "@id": "https://www.fgmrenov.fr/#business" },
                 "areaServed": { "@type": "AdministrativeArea", "name": "Vall\u00e9e de la Risle, Eure (27)" }
               }
             },
@@ -180,7 +209,7 @@
                 "name": "Installation de cuisine \u00e9quip\u00e9e",
                 "serviceType": "Pose de cuisine",
                 "description": "Pose et montage de cuisines \u00e9quip\u00e9es toutes marques : plomberie, \u00e9lectricit\u00e9, plan de travail, cr\u00e9dence, finitions.",
-                "provider": { "@id": "https://www.fgm-renov.fr/#business" },
+                "provider": { "@id": "https://www.fgmrenov.fr/#business" },
                 "areaServed": { "@type": "AdministrativeArea", "name": "Vall\u00e9e de la Risle, Eure (27)" }
               }
             },
@@ -191,78 +220,52 @@
                 "name": "Pose et d\u00e9pannage de volets roulants",
                 "serviceType": "Volets roulants et d\u00e9pannage",
                 "description": "Pose, motorisation et d\u00e9pannage de volets roulants toutes marques. Intervention rapide en Vall\u00e9e de la Risle.",
-                "provider": { "@id": "https://www.fgm-renov.fr/#business" },
+                "provider": { "@id": "https://www.fgmrenov.fr/#business" },
                 "areaServed": { "@type": "AdministrativeArea", "name": "Vall\u00e9e de la Risle, Eure (27)" }
               }
             }
           ]
         },
-        "sameAs": [],
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "5.0",
-          "bestRating": "5",
-          "worstRating": "1",
-          "ratingCount": "3",
-          "reviewCount": "3"
-        },
-        "review": [
-          {
-            "@type": "Review",
-            "author": { "@type": "Person", "name": "Client v\u00e9rifi\u00e9" },
-            "datePublished": "2025-10-27",
-            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-            "reviewBody": "Artisan tr\u00e8s professionnel, travail soign\u00e9 et bien r\u00e9alis\u00e9. Que je reprendrais pour d'autres travaux. Je recommande FGM RENOV."
-          },
-          {
-            "@type": "Review",
-            "author": { "@type": "Person", "name": "Aur\u00e9lie" },
-            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-            "reviewBody": "Tr\u00e8s professionnel, agr\u00e9able, ponctuel avec de bons tarifs."
-          },
-          {
-            "@type": "Review",
-            "author": { "@type": "Person", "name": "Client AlloVoisins" },
-            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-            "reviewBody": "Professionnel s\u00e9rieux et comp\u00e9tent, tr\u00e8s p\u00e9dagogue, en qui vous pouvez avoir confiance."
-          }
+        "sameAs": [
+          "https://www.google.com/search?kgmid=/g/11wtpzf54k",
+          "https://www.allovoisins.com/p/fgmrenov"
         ]
       },
       {
         "@type": "WebSite",
-        "@id": "https://www.fgm-renov.fr/#website",
-        "url": "https://www.fgm-renov.fr/",
+        "@id": "https://www.fgmrenov.fr/#website",
+        "url": "https://www.fgmrenov.fr/",
         "name": "FGM RENOV",
         "description": "Artisan r\u00e9novation int\u00e9rieure en Vall\u00e9e de la Risle (27)",
-        "publisher": { "@id": "https://www.fgm-renov.fr/#business" },
+        "publisher": { "@id": "https://www.fgmrenov.fr/#business" },
         "inLanguage": "fr-FR"
       },
       {
         "@type": "WebPage",
-        "@id": "https://www.fgm-renov.fr/#webpage",
-        "url": "https://www.fgm-renov.fr/",
+        "@id": "https://www.fgmrenov.fr/#webpage",
+        "url": "https://www.fgmrenov.fr/",
         "name": "FGM RENOV \u2014 Artisan R\u00e9novation Saint-Philbert-sur-Risle (27)",
-        "isPartOf": { "@id": "https://www.fgm-renov.fr/#website" },
-        "about": { "@id": "https://www.fgm-renov.fr/#business" },
+        "isPartOf": { "@id": "https://www.fgmrenov.fr/#website" },
+        "about": { "@id": "https://www.fgmrenov.fr/#business" },
         "inLanguage": "fr-FR",
         "speakable": {
           "@type": "SpeakableSpecification",
-          "cssSelector": [".h1", ".hero-card .overline", "#faq-title"]
+          "cssSelector": [".hero-card h1", "#faq-title"]
         }
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://www.fgm-renov.fr/#breadcrumb",
+        "@id": "https://www.fgmrenov.fr/#breadcrumb",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.fgm-renov.fr/" },
-          { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.fgm-renov.fr/#services" },
-          { "@type": "ListItem", "position": 3, "name": "R\u00e9alisations", "item": "https://www.fgm-renov.fr/#realisations" },
-          { "@type": "ListItem", "position": 4, "name": "Contact", "item": "https://www.fgm-renov.fr/#contact" }
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.fgmrenov.fr/" },
+          { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.fgmrenov.fr/#services" },
+          { "@type": "ListItem", "position": 3, "name": "R\u00e9alisations", "item": "https://www.fgmrenov.fr/#realisations" },
+          { "@type": "ListItem", "position": 4, "name": "Contact", "item": "https://www.fgmrenov.fr/#contact" }
         ]
       },
       {
         "@type": "FAQPage",
-        "@id": "https://www.fgm-renov.fr/#faq",
+        "@id": "https://www.fgmrenov.fr/#faq",
         "mainEntity": [
           {
             "@type": "Question",
@@ -277,7 +280,7 @@
             "name": "Dans quelles communes FGM RENOV intervient-il ?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Bas\u00e9 \u00e0 Saint-Philbert-sur-Risle (27290), FGM RENOV intervient dans un rayon de 40 km : Pont-Audemer, Montfort-sur-Risle, Brionne, Bernay, Bourg-Achard, Beuzeville, Bourgtheroulde, Routot et Cormeilles. Au-del\u00e0, un d\u00e9placement reste possible sur devis."
+              "text": "Bas\u00e9 \u00e0 Saint-Philbert-sur-Risle (27290), FGM RENOV r\u00e9alise vos travaux de r\u00e9novation dans un rayon de 50 km, dans l'Eure, la Seine-Maritime et le Calvados : Pont-Audemer, Brionne, Bernay, Bourg-Achard, Beuzeville, Honfleur, Lisieux, Elbeuf, Rouen, Le Havre et leurs environs. Les d\u00e9pannages urgents sont assur\u00e9s en priorit\u00e9 dans un rayon de 40 km autour de Saint-Philbert-sur-Risle."
             }
           },
           {
@@ -336,7 +339,7 @@
 <!-- Navigation -->
 <header class="nav" id="nav">
   <div class="nav-inner">
-    <a href="#" class="logo" aria-label="FGM RENOV — accueil">FGM <b>RENOV</b></a>
+    <a href="#" class="logo"><img src="/img/logo-fgm-renov.png" alt="FGM RENOV — accueil" width="56" height="56"></a>
 
     <nav aria-label="Menu principal">
       <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Ouvrir le menu">
@@ -365,9 +368,8 @@
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <div class="hero-card">
-        <p class="overline">Artisan rénovation intérieure · Saint-Philbert-sur-Risle · Vallée de la Risle</p>
-        <h1 class="h1">Votre intérieur,<br><i>notre savoir-faire.</i></h1>
-        <p class="sr-only">FGM RENOV, artisan rénovation intérieure à Saint-Philbert-sur-Risle (27290) et Pont-Audemer. Spécialiste salle de bain, carrelage, faïence, placo, parquet, cuisine, volets roulants. 10 ans d'expérience, devis gratuit sous 48 h, dépannage rapide en Vallée de la Risle.</p>
+        <h1 class="overline"><span>Artisan rénovation intérieure<br><span class="nowrap">Saint-Philbert-sur-Risle</span> <span class="nowrap">&amp; Pont-Audemer</span></span></h1>
+        <p class="h1">Votre intérieur,<br><i>notre savoir-faire.</i></p>
       </div>
     </div>
   </section>
@@ -551,80 +553,73 @@
   <section class="testimonials" id="avis" aria-labelledby="avis-title">
     <div class="container">
       <header class="section-head">
-        <p class="kicker">Avis clients · 5/5</p>
+        <p class="kicker">Avis clients · 4,8/5 sur AlloVoisins</p>
         <h2 id="avis-title">Ils nous ont fait confiance</h2>
         <hr>
       </header>
 
       <div class="testimonials-grid">
 
-        <article class="testimonial" itemscope itemtype="https://schema.org/Review">
-          <meta itemprop="itemReviewed" content="FGM RENOV">
-          <div class="stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" aria-label="Note 5 sur 5">
-            <meta itemprop="ratingValue" content="5">
-            <meta itemprop="bestRating" content="5">
+        <article class="testimonial">
+          <div class="stars" aria-label="Note 5 sur 5">
             <span aria-hidden="true">★★★★★</span>
           </div>
-          <blockquote itemprop="reviewBody">
-            « Artisan très professionnel, travail soigné et bien réalisé. Que je reprendrais pour d'autres travaux. Je recommande FGM&nbsp;RENOV. »
+          <blockquote>
+            « Nous avons confié un grand chantier de rénovation des chambres et salle de bain à Filipe. Tout d'abord il a très bien protégé les pièces de réception du bas et bâché tout l'escalier ainsi que l'entrée de la maison. Travail très bien réalisé. De plus tous les soirs il nous envoyait des photos […] du travail accompli dans la journée. […] Nous recommandons vivement. »
           </blockquote>
           <footer class="testimonial-meta">
-            <span class="testimonial-author" itemprop="author">Client vérifié</span>
-            <span class="testimonial-platform testimonial-platform-google">
-              <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.1c-.22-.66-.35-1.36-.35-2.1s.13-1.44.35-2.1V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.83z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.83C6.71 7.31 9.14 5.38 12 5.38z"/></svg>
-              Google / Travaux.com · 27 oct. 2025
+            <span class="testimonial-author">Marie F. <small>· Rénovation chambres &amp; salle de bain</small></span>
+            <span class="testimonial-platform testimonial-platform-allo">
+              <span class="allo-badge" aria-hidden="true">AV</span>
+              AlloVoisins · 16 mai 2026
             </span>
           </footer>
         </article>
 
-        <article class="testimonial" itemscope itemtype="https://schema.org/Review">
-          <meta itemprop="itemReviewed" content="FGM RENOV">
-          <div class="stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" aria-label="Note 5 sur 5">
-            <meta itemprop="ratingValue" content="5">
-            <meta itemprop="bestRating" content="5">
+        <article class="testimonial">
+          <div class="stars" aria-label="Note 5 sur 5">
             <span aria-hidden="true">★★★★★</span>
           </div>
-          <blockquote itemprop="reviewBody">
-            « Très professionnel, agréable, ponctuel avec de bons tarifs. »
+          <blockquote>
+            « Réactif et très clair dans ses explications. Devis adapté à la demande. Disponible et très sympathique&nbsp;! Merci »
           </blockquote>
           <footer class="testimonial-meta">
-            <span class="testimonial-author" itemprop="author">Aurélie</span>
+            <span class="testimonial-author">Philippe C. <small>· Plâtrerie</small></span>
             <span class="testimonial-platform testimonial-platform-allo">
               <span class="allo-badge" aria-hidden="true">AV</span>
-              AlloVoisins
+              AlloVoisins · 24 avr. 2025
             </span>
           </footer>
         </article>
 
-        <article class="testimonial" itemscope itemtype="https://schema.org/Review">
-          <meta itemprop="itemReviewed" content="FGM RENOV">
-          <div class="stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" aria-label="Note 5 sur 5">
-            <meta itemprop="ratingValue" content="5">
-            <meta itemprop="bestRating" content="5">
+        <article class="testimonial">
+          <div class="stars" aria-label="Note 5 sur 5">
             <span aria-hidden="true">★★★★★</span>
           </div>
-          <blockquote itemprop="reviewBody">
-            « Professionnel sérieux et compétent, très pédagogue, en qui vous pouvez avoir confiance. »
+          <blockquote>
+            « Filipe est intervenu pour poser du placo et du carrelage. Prestation de qualité »
           </blockquote>
           <footer class="testimonial-meta">
-            <span class="testimonial-author" itemprop="author">Client vérifié</span>
+            <span class="testimonial-author">Colombe A. <small>· Placo &amp; carrelage</small></span>
             <span class="testimonial-platform testimonial-platform-allo">
               <span class="allo-badge" aria-hidden="true">AV</span>
-              AlloVoisins
+              AlloVoisins · 13 avr. 2025
             </span>
           </footer>
         </article>
 
       </div>
 
+      <p class="testimonials-note">Extraits d'avis publiés par des clients sur AlloVoisins — note moyenne de 4,8/5 sur 13&nbsp;avis au 26&nbsp;septembre 2026. Les coupes sont signalées par […].</p>
+
       <div class="testimonials-cta">
         <p>Retrouvez tous nos avis en ligne :</p>
         <div class="testimonials-links">
-          <a href="https://www.google.com/search?q=FGM+RENOV+Pont-Audemer" target="_blank" rel="noopener" class="platform-link">
+          <a href="https://share.google/AwsamYIoHF18M3J6E" target="_blank" rel="noopener" class="platform-link">
             <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.1c-.22-.66-.35-1.36-.35-2.1s.13-1.44.35-2.1V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.83z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.83C6.71 7.31 9.14 5.38 12 5.38z"/></svg>
             Google
           </a>
-          <a href="https://www.allovoisins.com/" target="_blank" rel="noopener" class="platform-link">
+          <a href="https://www.allovoisins.com/p/fgmrenov" target="_blank" rel="noopener" class="platform-link">
             <span class="allo-badge allo-badge-dark" aria-hidden="true">AV</span>
             AlloVoisins
           </a>
@@ -645,7 +640,7 @@
         <div class="why-card">
           <span class="why-num">01</span>
           <h3>Artisan local</h3>
-          <p>Basé à Saint-Philbert-sur-Risle, FGM&nbsp;RENOV intervient sur l'ensemble de la Vallée de la Risle et jusqu'à Pont-Audemer.</p>
+          <p>Basé à Saint-Philbert-sur-Risle, FGM&nbsp;RENOV intervient sur toute la Vallée de la Risle, de Pont-Audemer jusqu'à Rouen et au Havre.</p>
         </div>
         <div class="why-card">
           <span class="why-num">02</span>
@@ -671,22 +666,58 @@
     <div class="container">
       <header class="section-head">
         <p class="kicker">Zone d'intervention</p>
-        <h2 id="zone-title">Vallée de la Risle &amp; Pont-Audemer</h2>
+        <h2 id="zone-title">De la Vallée de la Risle à Rouen et au Havre</h2>
         <hr>
       </header>
-      <p class="zone-sub">Basés à Saint-Philbert-sur-Risle (27290), nous nous déplaçons dans un rayon de 40&nbsp;km. Au-delà&nbsp;? Contactez-nous, un déplacement reste possible sur devis.</p>
-      <ul class="zone-list">
-        <li>Saint-Philbert-sur-Risle</li>
-        <li>Pont-Audemer</li>
-        <li>Montfort-sur-Risle</li>
-        <li>Brionne</li>
-        <li>Bernay</li>
-        <li>Bourg-Achard</li>
-        <li>Beuzeville</li>
-        <li>Bourgtheroulde</li>
-        <li>Routot</li>
-        <li>Cormeilles</li>
-      </ul>
+      <p class="zone-sub">Basés à Saint-Philbert-sur-Risle (27290), nous réalisons vos travaux de rénovation dans un rayon de 50&nbsp;km, dans l'Eure, la Seine-Maritime et le Calvados. Pour un dépannage urgent, nous intervenons en priorité autour de Pont-Audemer et de la Vallée de la Risle.</p>
+      <div class="zone-groups">
+        <div class="zone-group">
+          <h3>Vallée de la Risle</h3>
+          <ul class="zone-list">
+            <li>Saint-Philbert-sur-Risle</li>
+            <li>Montfort-sur-Risle</li>
+            <li>Pont-Audemer</li>
+            <li>Brionne</li>
+            <li>Nassandres sur Risle</li>
+            <li>Beaumont-le-Roger</li>
+            <li>Le Neubourg</li>
+          </ul>
+        </div>
+        <div class="zone-group">
+          <h3>Roumois</h3>
+          <ul class="zone-list">
+            <li>Bourg-Achard</li>
+            <li>Routot</li>
+            <li>Bourgtheroulde</li>
+            <li>Bosroumois</li>
+            <li>Le Thuit de l'Oison</li>
+            <li>Saint-Ouen-de-Thouberville</li>
+          </ul>
+        </div>
+        <div class="zone-group">
+          <h3>Lieuvin &amp; Pays d'Auge</h3>
+          <ul class="zone-list">
+            <li>Beuzeville</li>
+            <li>Cormeilles</li>
+            <li>Épaignes</li>
+            <li>Bernay</li>
+            <li>Thiberville</li>
+            <li>Honfleur</li>
+            <li>Lisieux</li>
+          </ul>
+        </div>
+        <div class="zone-group">
+          <h3>Rouen, Le Havre &amp; vallée de Seine</h3>
+          <ul class="zone-list">
+            <li>Rouen</li>
+            <li>Elbeuf</li>
+            <li>Grand-Couronne</li>
+            <li>Le Havre</li>
+            <li>Port-Jérôme-sur-Seine</li>
+            <li>Lillebonne</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -710,7 +741,7 @@
         <details class="faq-item">
           <summary>Dans quelles communes intervenez-vous&nbsp;?</summary>
           <div class="faq-answer">
-            <p>Basés à <strong>Saint-Philbert-sur-Risle (27290)</strong>, nous intervenons dans un rayon de 40&nbsp;km : Pont-Audemer, Montfort-sur-Risle, Brionne, Bernay, Bourg-Achard, Beuzeville, Bourgtheroulde, Routot et Cormeilles. Au-delà, un déplacement reste possible sur devis.</p>
+            <p>Basés à <strong>Saint-Philbert-sur-Risle (27290)</strong>, nous réalisons vos travaux de rénovation dans un <strong>rayon de 50&nbsp;km</strong>, dans l'Eure, la Seine-Maritime et le Calvados : Pont-Audemer, Brionne, Bernay, Bourg-Achard, Beuzeville, Honfleur, Lisieux, Elbeuf, Rouen, Le Havre et leurs environs. Les dépannages urgents sont assurés en priorité dans un rayon de 40&nbsp;km autour de Saint-Philbert-sur-Risle.</p>
           </div>
         </details>
 
@@ -842,6 +873,7 @@
         <button type="submit" class="btn-primary btn-large btn-full">Envoyer ma demande →</button>
 
         <p class="form-note">Réponse sous 48&nbsp;h. Pour une urgence, appelez directement au <a href="tel:+33768813152">07&nbsp;68&nbsp;81&nbsp;31&nbsp;52</a>.</p>
+        <p class="form-legal">Vos coordonnées servent uniquement à répondre à votre demande. <a href="/confidentialite.html">Données personnelles</a></p>
       </form>
     </div>
   </section>
@@ -852,7 +884,7 @@
 <footer class="footer">
   <div class="container footer-grid">
     <div>
-      <p class="footer-logo">FGM <b>RENOV</b></p>
+      <a href="#" class="footer-logo"><img src="/img/logo-fgm-renov.png" alt="FGM RENOV" width="88" height="88" loading="lazy"></a>
       <p class="footer-tag">Artisan rénovation intérieure<br>Saint-Philbert-sur-Risle &amp; Vallée de la Risle</p>
     </div>
     <div>
@@ -883,12 +915,12 @@
         <li><a href="#zone">Zone d'intervention</a></li>
         <li><a href="#faq">Questions fréquentes</a></li>
       </ul>
-      <p class="footer-zone" style="margin-top:14px;">Pont-Audemer · Bernay · Beuzeville · Montfort-sur-Risle</p>
+      <p class="footer-zone" style="margin-top:14px;">Pont-Audemer · Bernay · Honfleur · Rouen · Le Havre</p>
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© <span id="year">2026</span> FGM&nbsp;RENOV — Tous droits réservés.</p>
-    <p><a href="#main">Haut de page ↑</a></p>
+    <p>© <span id="year">2026</span> FGM&nbsp;RENOV — Filipe ALBINO TEIXEIRA, EI · SIRET 843&nbsp;087&nbsp;669&nbsp;00035</p>
+    <p class="footer-legal"><a href="/mentions-legales.html">Mentions légales</a> · <a href="/confidentialite.html">Confidentialité</a> · Site réalisé par <a href="https://lesage.agency" rel="noopener">Lesage Agency</a></p>
   </div>
 </footer>
 
@@ -904,6 +936,6 @@
   </a>
 </div>
 
-<script src="/js/main.js?v=5" defer></script>
+<script src="/js/main.js?v=7" defer></script>
 </body>
 </html>

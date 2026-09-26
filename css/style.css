@@ -8,6 +8,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
+  --nav-h: 68px;           /* hauteur de la nav — pilote aussi le menu mobile et le logo */
   --terra: #D4B26A;        /* Or miel, accent principal */
   --terra-dark: #B7944F;
   --terra-hover: #DFC07A;
@@ -74,6 +75,7 @@ h1, h2, h3, h4 {
 }
 .skip-link:focus { left: 0; }
 
+.nowrap { white-space: nowrap; }
 .sr-only {
   position: absolute;
   width: 1px;
@@ -277,21 +279,23 @@ body:has(.nav-menu.is-open) .nav { position: fixed; top: 0; left: 0; right: 0; }
   max-width: var(--max);
   margin: 0 auto;
   padding: 0 var(--gutter);
-  height: 64px;
+  height: var(--nav-h);
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
 }
-.logo {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: .22em;
-  text-transform: uppercase;
-  color: var(--dark);
+/* Logo : tuile carrée blanche (le fichier a un fond blanc), jamais déformée */
+.logo { display: flex; align-items: center; flex-shrink: 0; }
+.logo img {
+  width: calc(var(--nav-h) - 12px);
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px rgba(26,22,20,.08), 0 2px 8px rgba(26,22,20,.08);
 }
-.logo b { font-weight: 700; color: var(--terra-dark); }
 
 .nav-toggle {
   display: inline-flex;
@@ -313,7 +317,7 @@ body:has(.nav-menu.is-open) .nav { position: fixed; top: 0; left: 0; right: 0; }
 
 .nav-menu {
   position: fixed;
-  inset: 64px 0 0 0;
+  inset: var(--nav-h) 0 0 0;
   background: var(--cream);
   padding: 32px var(--gutter);
   display: flex;
@@ -389,6 +393,8 @@ body:has(.nav-menu.is-open) .nav { position: fixed; top: 0; left: 0; right: 0; }
   color: var(--cream);
 }
 .hero-card .overline {
+  font-family: 'Lato', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
   margin-bottom: 18px;
   color: var(--cream);
   font-weight: 700;
@@ -398,6 +404,11 @@ body:has(.nav-menu.is-open) .nav { position: fixed; top: 0; left: 0; right: 0; }
   width: 36px;
   height: 2px;
 }
+/* Petit écran : le tiret décoratif mange 50 px et force le nom de la commune
+   sur 4 lignes. La bordure dorée de la carte suffit comme accent. */
+@media (max-width: 519px) {
+  .hero-card .overline::before { display: none; }
+}
 .hero-card .h1 {
   color: var(--cream);
   margin-bottom: 0;
@@ -406,6 +417,7 @@ body:has(.nav-menu.is-open) .nav { position: fixed; top: 0; left: 0; right: 0; }
   color: var(--terra);
 }
 .h1 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: clamp(38px, 9vw, 72px);
   color: var(--cream);
   line-height: 1.05;
@@ -778,6 +790,15 @@ section { padding: 72px 0; }
 }
 .allo-badge-dark { background: var(--dark); }
 
+.testimonials-note {
+  font-size: 12px;
+  color: var(--warm);
+  line-height: 1.6;
+  text-align: center;
+  max-width: 640px;
+  margin: -16px auto 32px;
+}
+.testimonial-author small { font-weight: 400; color: var(--warm); }
 .testimonials-cta {
   text-align: center;
   padding-top: 16px;
@@ -856,6 +877,19 @@ section { padding: 72px 0; }
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+}
+.zone-groups { display: grid; gap: 28px; }
+.zone-group h3 {
+  font-family: 'Lato', system-ui, -apple-system, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--terra-dark);
+  margin-bottom: 12px;
+}
+@media (min-width: 900px) {
+  .zone-groups { grid-template-columns: repeat(2, 1fr); gap: 32px 48px; }
 }
 .zone-list li {
   padding: 10px 18px;
@@ -1056,6 +1090,14 @@ a.contact-row:hover { transform: translateX(4px); }
   text-align: center;
 }
 .form-note a { color: var(--terra-dark); font-weight: 800; text-decoration: underline; }
+.form-legal {
+  margin-top: 10px;
+  font-size: 11px;
+  color: var(--warm);
+  line-height: 1.6;
+  text-align: center;
+}
+.form-legal a { color: inherit; text-decoration: underline; }
 
 /* ────────────────── Footer ────────────────── */
 .footer {
@@ -1070,15 +1112,8 @@ a.contact-row:hover { transform: translateX(4px); }
   gap: 32px;
   padding-bottom: 40px;
 }
-.footer-logo {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 22px;
-  letter-spacing: .22em;
-  text-transform: uppercase;
-  color: var(--cream);
-  margin-bottom: 10px;
-}
-.footer-logo b { color: var(--terra); font-weight: 700; }
+.footer-logo { display: inline-block; margin-bottom: 16px; }
+.footer-logo img { width: 88px; height: 88px; border-radius: 6px; background: #fff; }
 .footer-tag { color: var(--warm); line-height: 1.7; font-size: 13px; }
 .footer h4 {
   font-family: 'Lato', sans-serif;
@@ -1184,7 +1219,7 @@ a.contact-row:hover { transform: translateX(4px); }
   body { padding-bottom: 0; }
   .mobile-stick { display: none; }
 
-  .nav-inner { height: 72px; }
+  :root { --nav-h: 80px; }
   .nav-toggle { display: none; }
   .nav-menu {
     position: static;
@@ -1197,10 +1232,10 @@ a.contact-row:hover { transform: translateX(4px); }
     overflow: visible;
   }
   .nav-menu a {
-    padding: 10px 16px;
+    padding: 10px 10px;       /* serré entre 900 et 1100 px : 7 liens + logo + bouton */
     border-bottom: none;
     font-size: 12px;
-    letter-spacing: .12em;
+    letter-spacing: .1em;
   }
   .nav-cta {
     display: inline-flex;
@@ -1214,6 +1249,7 @@ a.contact-row:hover { transform: translateX(4px); }
     letter-spacing: .14em;
     text-transform: uppercase;
     font-weight: 800;
+    white-space: nowrap;
     transition: all .25s var(--ease);
   }
   .nav-cta:hover {
@@ -1258,4 +1294,22 @@ a.contact-row:hover { transform: translateX(4px); }
     transition-duration: .01ms !important;
   }
   html { scroll-behavior: auto; }
+}
+
+/* ────────────────── Pages légales ────────────────── */
+.legal-head { background: var(--cream); border-bottom: 1px solid var(--line); }
+.legal-head .nav-inner { justify-content: flex-start; gap: 20px; }
+.legal-back { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--dark); }
+.legal-back:hover { color: var(--terra-dark); }
+.legal { max-width: 760px; margin: 0 auto; padding: 48px var(--gutter) 72px; }
+.legal h1 { font-size: clamp(34px, 6vw, 48px); margin-bottom: 8px; }
+.legal .legal-updated { color: var(--warm); font-size: 13px; margin-bottom: 36px; }
+.legal h2 { font-size: 24px; margin: 36px 0 12px; }
+.legal p, .legal li { line-height: 1.75; margin-bottom: 10px; }
+.legal ul { list-style: disc; padding-left: 22px; margin-bottom: 10px; }
+.legal a { color: var(--terra-dark); text-decoration: underline; }
+body.page-legal { padding-bottom: 0; }
+
+@media (min-width: 1100px) {
+  .nav-menu a { padding: 10px 16px; letter-spacing: .12em; }
 }

@@ -98,7 +98,8 @@
         var target = document.querySelector(id);
         if (target) {
           e.preventDefault();
-          var offset = (window.innerWidth >= 900 ? 80 : 72);
+          var navEl = document.getElementById('nav');
+          var offset = (navEl ? navEl.offsetHeight : 68) + 8;
           var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
           window.scrollTo({ top: top, behavior: 'smooth' });
         }
