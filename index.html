@@ -46,7 +46,7 @@
   <link rel="preload" as="image" fetchpriority="high" href="/img/hero-maison-mobile.JPG" media="(max-width: 799px)">
   <link rel="preload" as="image" fetchpriority="high" href="/img/hero-maison.JPG" media="(min-width: 800px)">
 
-  <link rel="stylesheet" href="/css/style.css?v=8">
+  <link rel="stylesheet" href="/css/style.css?v=9">
 
   <!-- Polices : chargement non bloquant (évite le render-blocking sur le LCP) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -329,7 +329,7 @@
 <!-- Top bar mobile : tel + dépannage -->
 <div class="topbar">
   <a href="tel:+33768813152" class="topbar-phone" aria-label="Appeler FGM RENOV">
-    <span aria-hidden="true">✆</span> 07 68 81 31 52
+    <svg class="ico-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 07 68 81 31 52
   </a>
   <a href="#depannage" class="topbar-urgent">
     <span class="pulse-dot" aria-hidden="true"></span> Dépannage rapide
@@ -542,7 +542,7 @@
         </ul>
       </div>
       <div class="depannage-actions">
-        <a href="tel:+33768813152" class="btn-primary btn-large"><span aria-hidden="true">✆</span> Appeler 07 68 81 31 52</a>
+        <a href="tel:+33768813152" class="btn-primary btn-large"><svg class="ico-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Appeler 07 68 81 31 52</a>
         <a href="sms:+33768813152?body=Bonjour%20FGM%20RENOV%2C%20j%27ai%20besoin%20d%27un%20d%C3%A9pannage%20%3A" class="btn-outline">Envoyer un SMS</a>
         <a href="#contact" class="btn-link">Décrire par formulaire →</a>
       </div>
@@ -925,16 +925,24 @@
 </footer>
 
 <!-- Mobile sticky bar -->
-<div class="mobile-stick" role="complementary" aria-label="Contact rapide FGM RENOV">
-  <a href="tel:+33768813152" class="ms-btn ms-phone" aria-label="Appeler FGM RENOV au 07 68 81 31 52">
-    <span class="ms-lbl"><span class="ms-ico" aria-hidden="true">✆</span> Appeler</span>
-    <strong>07 68 81 31 52</strong>
-  </a>
-  <a href="#contact" class="ms-btn ms-devis" aria-label="Prendre rendez-vous — devis gratuit">
-    <span class="ms-lbl"><span class="ms-ico" aria-hidden="true">✎</span> Prendre RDV</span>
-    <strong>Devis gratuit</strong>
-  </a>
+<div class="mobile-stick" id="mobileStick" role="complementary" aria-label="Contact rapide FGM RENOV">
+  <a href="tel:+33768813152" class="ms-btn ms-phone" aria-label="Appeler FGM RENOV au 07 68 81 31 52"><svg class="ico-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>Appeler</span></a>
+  <a href="#contact" class="ms-btn ms-devis">Devis gratuit</a>
 </div>
+<script>
+/* Barre d'appel masquée tant que la topbar (qui affiche déjà le numéro) est à l'écran :
+   la photo du hero s'affiche en entier à l'arrivée, et le numéro reste toujours accessible.
+   Script en ligne juste après la barre : il s'exécute avant l'affichage (pas de clignotement).
+   Sans IntersectionObserver ou sans JS, la barre reste simplement visible. */
+(function () {
+  var bar = document.getElementById('mobileStick'), topbar = document.querySelector('.topbar');
+  if (!bar || !topbar || !('IntersectionObserver' in window)) return;
+  bar.classList.add('is-hidden');
+  new IntersectionObserver(function (e) {
+    bar.classList.toggle('is-hidden', e[0].isIntersecting);
+  }).observe(topbar);
+})();
+</script>
 
 <script src="/js/main.js?v=7" defer></script>
 </body>

@@ -78,6 +78,7 @@ h1, h2, h3, h4 {
 .skip-link:focus { left: 0; }
 
 .nowrap { white-space: nowrap; }
+.ico-phone { display: inline-block; width: 1em; height: 1em; flex-shrink: 0; }
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1107,7 +1108,7 @@ a.contact-row:hover { transform: translateX(4px); }
   color: var(--warm-light);
   padding: 56px 0 0;
   /* Mobile : place sous le footer pour la barre fixe « Appeler / Devis » (fond sombre, invisible) */
-  padding-bottom: calc(88px + env(safe-area-inset-bottom, 0px));
+  padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px));
   font-size: 14px;
 }
 .footer-grid {
@@ -1146,61 +1147,42 @@ a.contact-row:hover { transform: translateX(4px); }
 }
 
 /* ────────────────── Mobile sticky bar ────────────────── */
+/* Sobre : une ligne, angles vifs comme le reste du site, l'appel en bouton principal. */
 .mobile-stick {
   position: fixed;
   bottom: 0; left: 0; right: 0;
   display: flex;
-  gap: 2px;
+  gap: 8px;
   z-index: 600;
-  padding: 8px 8px calc(8px + env(safe-area-inset-bottom, 0px));
-  background: rgba(26, 22, 20, .96);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 -10px 30px rgba(0,0,0,.22);
-  border-top: 1px solid rgba(247, 242, 234, .08);
+  padding: 8px 12px calc(8px + env(safe-area-inset-bottom, 0px));
+  background: var(--dark);
+  border-top: 1px solid rgba(247, 242, 234, .1);
+  transition: transform .3s var(--ease), visibility 0s;
+}
+/* Masquée tant que la topbar est visible (voir le script après la barre) */
+.mobile-stick.is-hidden {
+  transform: translateY(110%);
+  visibility: hidden;
+  transition: transform .3s var(--ease), visibility 0s .3s;
 }
 .ms-btn {
-  flex: 1;
-  min-height: 56px;
-  text-align: center;
-  padding: 10px 8px;
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: .04em;
+  min-height: 44px;              /* cible tactile minimale recommandée par Apple */
+  padding: 0 14px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2px;
-  border-radius: 12px;
-  transition: transform .15s ease, filter .15s ease;
-}
-.ms-btn .ms-ico {
-  font-size: 18px;
-  line-height: 1;
-}
-.ms-btn .ms-lbl {
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-  opacity: .75;
-}
-.ms-btn strong {
-  font-size: 15px;
+  gap: 8px;
+  border-radius: 2px;
+  font-size: 12px;
   font-weight: 800;
-  letter-spacing: .02em;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  transition: filter .15s ease;
 }
-.ms-phone {
-  background: linear-gradient(135deg, var(--terra-hover) 0%, var(--terra-dark) 100%);
-  color: var(--terra-ink);
-  box-shadow: 0 4px 14px rgba(212, 178, 106, .45);
-}
-.ms-devis {
-  background: var(--cream);
-  color: var(--dark);
-}
-.ms-phone:active, .ms-devis:active { transform: translateY(1px); filter: brightness(.95); }
+.ms-btn .ico-phone { width: 16px; height: 16px; }
+.ms-phone { flex: 1.35; background: var(--terra); color: var(--terra-ink); }
+.ms-devis { flex: 1; color: var(--cream); border: 1px solid rgba(247, 242, 234, .35); }
+.ms-btn:active { filter: brightness(.92); }
 
 /* ────────────────── Breakpoints ────────────────── */
 
