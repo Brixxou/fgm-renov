@@ -26,6 +26,11 @@
     Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
   for = "/*.html"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
@@ -38,3 +43,41 @@
   to = "https://www.fgmrenov.fr/:splat"
   status = 301
   force = true
+
+# ── Anciens noms des photos (renommées le 09/10/2026) ──
+[[redirects]]
+  from = "/img/avant1.JPG"
+  to = "/img/pose-cuisine-equipee-avant.jpg"
+  status = 301
+[[redirects]]
+  from = "/img/apres1.JPG"
+  to = "/img/pose-cuisine-equipee-apres.jpg"
+  status = 301
+[[redirects]]
+  from = "/img/avant2.JPG"
+  to = "/img/renovation-salle-d-eau-travertin-avant.jpg"
+  status = 301
+[[redirects]]
+  from = "/img/apres2.JPG"
+  to = "/img/renovation-salle-d-eau-travertin-apres.jpg"
+  status = 301
+[[redirects]]
+  from = "/img/avant3.JPG"
+  to = "/img/douche-italienne-zellige-vert-avant.jpg"
+  status = 301
+[[redirects]]
+  from = "/img/apres3.JPG"
+  to = "/img/douche-italienne-zellige-vert-apres.jpg"
+  status = 301
+[[redirects]]
+  from = "/img/2213880919008131217.JPG"
+  to = "/img/douche-italienne-zellige-bleu.jpg"
+  status = 301
+[[redirects]]
+  from = "/img/8358812650224980286.JPG"
+  to = "/img/salon-peinture-verte-parquet.jpg"
+  status = 301
+[[redirects]]
+  from = "/img/8386116926733103983.JPG"
+  to = "/img/seche-serviettes-dore-vasque-pierre.jpg"
+  status = 301

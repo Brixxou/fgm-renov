@@ -40,22 +40,13 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
 
-  <!-- Hero LCP : préchargement calé sur la même media query que le CSS (.hero-bg).
-       Un imagesrcset choisirait selon la densité d'écran (375 px × DPR 3 = 1125 px → version
-       desktop) alors que le CSS affiche la version mobile : double téléchargement sur iPhone. -->
-  <link rel="preload" as="image" fetchpriority="high" href="/img/hero-maison-mobile.JPG" media="(max-width: 799px)">
-  <link rel="preload" as="image" fetchpriority="high" href="/img/hero-maison.JPG" media="(min-width: 800px)">
 
-  <link rel="stylesheet" href="/css/style.css?v=10">
+  <link rel="stylesheet" href="/css/style.css?v=11">
 
-  <!-- Polices : chargement non bloquant (évite le render-blocking sur le LCP) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" media="print" onload="this.media='all'"
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700;900&display=swap">
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700;900&display=swap">
-  </noscript>
+  <!-- Polices hébergées sur le site (plus de requête vers Google) : on précharge
+       les deux graisses visibles dès l'arrivée (slogan + sur-titre du hero). -->
+  <link rel="preload" href="/fonts/barlow-semi-condensed-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/lato-700-latin.woff2" as="font" type="font/woff2" crossorigin>
 
   <!-- JSON-LD : @graph complet (LocalBusiness · Services · FAQ · WebSite · Breadcrumb) -->
   <script type="application/ld+json">
@@ -364,7 +355,14 @@
 
   <!-- Hero -->
   <section class="hero">
-    <div class="hero-bg" role="img" aria-label="Intérieur de maison rénové avec élégance, ambiance chaleureuse et finitions soignées"></div>
+    <!-- Image décorative (alt vide) : vraie balise <img>, repérée tôt par le navigateur,
+         WebP avec secours JPEG, version mobile/desktop au même seuil que le CSS (800 px). -->
+    <picture>
+      <source media="(min-width: 800px)" srcset="/img/hero-maison.webp" type="image/webp">
+      <source media="(min-width: 800px)" srcset="/img/hero-maison.JPG">
+      <source srcset="/img/hero-maison-mobile.webp" type="image/webp">
+      <img class="hero-bg" src="/img/hero-maison-mobile.JPG" alt="" width="800" height="533" fetchpriority="high">
+    </picture>
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <div class="hero-card">
@@ -468,9 +466,9 @@
 
         <figure class="compare-item">
           <div class="compare" data-compare aria-label="Comparateur avant/après — cuisine équipée">
-            <img class="compare-after" src="/img/apres1.JPG" alt="Après : cuisine équipée blanche avec plan de travail, crédence et plaque induction, posée par FGM RENOV" loading="lazy" width="800" height="1066">
+            <picture><source srcset="/img/pose-cuisine-equipee-apres.webp" type="image/webp"><img class="compare-after" src="/img/pose-cuisine-equipee-apres.jpg" alt="Après : cuisine équipée blanche avec plan de travail, crédence et plaque induction, posée par FGM RENOV" loading="lazy" width="800" height="1066"></picture>
             <div class="compare-before">
-              <img src="/img/avant1.JPG" alt="Avant : pièce vide avec ancienne moquette bleue, sans aménagement de cuisine" loading="lazy" width="800" height="1066">
+              <picture><source srcset="/img/pose-cuisine-equipee-avant.webp" type="image/webp"><img src="/img/pose-cuisine-equipee-avant.jpg" alt="Avant : pièce vide avec ancienne moquette bleue, sans aménagement de cuisine" loading="lazy" width="800" height="1066"></picture>
             </div>
             <div class="compare-handle" aria-hidden="true"><span>⇔</span></div>
             <span class="compare-lbl compare-lbl-av">Avant</span>
@@ -482,9 +480,9 @@
 
         <figure class="compare-item">
           <div class="compare" data-compare aria-label="Comparateur avant/après — salle d'eau et WC">
-            <img class="compare-after" src="/img/apres2.JPG" alt="Après : salle d'eau rénovée — travertin au sol, faïence bleu clair, WC suspendu, vasque pierre, robinetterie dorée" loading="lazy" width="800" height="1066">
+            <picture><source srcset="/img/renovation-salle-d-eau-travertin-apres.webp" type="image/webp"><img class="compare-after" src="/img/renovation-salle-d-eau-travertin-apres.jpg" alt="Après : salle d'eau rénovée — travertin au sol, faïence bleu clair, WC suspendu, vasque pierre, robinetterie dorée" loading="lazy" width="800" height="1066"></picture>
             <div class="compare-before">
-              <img src="/img/avant2.JPG" alt="Avant : ancienne salle d'eau avec carrelage blanc fleuri et plomberie apparente" loading="lazy" width="800" height="1066">
+              <picture><source srcset="/img/renovation-salle-d-eau-travertin-avant.webp" type="image/webp"><img src="/img/renovation-salle-d-eau-travertin-avant.jpg" alt="Avant : ancienne salle d'eau avec carrelage blanc fleuri et plomberie apparente" loading="lazy" width="800" height="1066"></picture>
             </div>
             <div class="compare-handle" aria-hidden="true"><span>⇔</span></div>
             <span class="compare-lbl compare-lbl-av">Avant</span>
@@ -496,9 +494,9 @@
 
         <figure class="compare-item">
           <div class="compare" data-compare aria-label="Comparateur avant/après — douche à l'italienne">
-            <img class="compare-after" src="/img/apres3.JPG" alt="Après : douche à l'italienne — faïence zellige vert sauge, receveur extra-plat, robinetterie dorée" loading="lazy" width="800" height="1066">
+            <picture><source srcset="/img/douche-italienne-zellige-vert-apres.webp" type="image/webp"><img class="compare-after" src="/img/douche-italienne-zellige-vert-apres.jpg" alt="Après : douche à l'italienne — faïence zellige vert sauge, receveur extra-plat, robinetterie dorée" loading="lazy" width="800" height="1066"></picture>
             <div class="compare-before">
-              <img src="/img/avant3.JPG" alt="Avant : ancienne salle d'eau avec carrelage fleuri et plomberie apparente" loading="lazy" width="800" height="1066">
+              <picture><source srcset="/img/douche-italienne-zellige-vert-avant.webp" type="image/webp"><img src="/img/douche-italienne-zellige-vert-avant.jpg" alt="Avant : ancienne salle d'eau avec carrelage fleuri et plomberie apparente" loading="lazy" width="800" height="1066"></picture>
             </div>
             <div class="compare-handle" aria-hidden="true"><span>⇔</span></div>
             <span class="compare-lbl compare-lbl-av">Avant</span>
@@ -513,15 +511,15 @@
       <!-- Galerie complémentaire -->
       <div class="gallery-extra" aria-label="Autres réalisations">
         <figure>
-          <img src="/img/2213880919008131217.JPG" alt="Douche à l'italienne : faïence bleue verticale, pommeau pluie doré brossé" loading="lazy" width="800" height="1066">
+          <picture><source srcset="/img/douche-italienne-zellige-bleu.webp" type="image/webp"><img src="/img/douche-italienne-zellige-bleu.jpg" alt="Douche à l'italienne : faïence bleue verticale, pommeau pluie doré brossé" loading="lazy" width="800" height="1066"></picture>
           <figcaption>Douche à l'italienne — faïence zellige bleue</figcaption>
         </figure>
         <figure>
-          <img src="/img/8358812650224980286.JPG" alt="Salon rénové : mur peint vert, parquet clair, ambiance lumineuse" loading="lazy" width="800" height="1066">
+          <picture><source srcset="/img/salon-peinture-verte-parquet.webp" type="image/webp"><img src="/img/salon-peinture-verte-parquet.jpg" alt="Salon rénové : mur peint vert, parquet clair, ambiance lumineuse" loading="lazy" width="800" height="1066"></picture>
           <figcaption>Salon — peinture &amp; parquet</figcaption>
         </figure>
         <figure>
-          <img src="/img/8386116926733103983.JPG" alt="Salle d'eau rénovée : sèche-serviettes doré, vasque pierre sur meuble bois massif, robinetterie dorée" loading="lazy" width="800" height="1066">
+          <picture><source srcset="/img/seche-serviettes-dore-vasque-pierre.webp" type="image/webp"><img src="/img/seche-serviettes-dore-vasque-pierre.jpg" alt="Salle d'eau rénovée : sèche-serviettes doré, vasque pierre sur meuble bois massif, robinetterie dorée" loading="lazy" width="800" height="1066"></picture>
           <figcaption>Sèche-serviettes &amp; vasque pierre</figcaption>
         </figure>
       </div>
