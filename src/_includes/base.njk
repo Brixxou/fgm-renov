@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#1A1614">
+
+
+  <title>{{ title | safe }}</title>
+  <meta name="description" content="{{ description }}">
+{%- block headmeta %}
+  <meta name="robots" content="index, follow, max-image-preview:large">
+{%- endblock %}
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+{%- block social %}
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="FGM RENOV">
+  <meta property="og:title" content="{{ ogTitle or title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}{{ ogImage or '/img/og-fgm-renov.JPG' }}">
+  <meta name="twitter:card" content="summary_large_image">
+{%- endblock %}
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+
+  <link rel="stylesheet" href="/css/style.css?v=13">
+
+  <!-- Polices hébergées sur le site (plus de requête vers Google) : on précharge
+       les deux graisses visibles dès l'arrivée (slogan + sur-titre du hero). -->
+  <link rel="preload" href="/fonts/barlow-semi-condensed-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/lato-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+{%- block head %}{% endblock %}
+</head>
+<body>
+
+<!-- Skip link accessibility -->
+<a href="{{ '' if page.url == '/' else '/' }}#main" class="skip-link">Aller au contenu principal</a>
+
+<!-- Top bar mobile : tel + dépannage -->
+<div class="topbar">
+  <a href="tel:+33768813152" class="topbar-phone" aria-label="Appeler FGM RENOV">
+    <svg class="ico-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 07 68 81 31 52
+  </a>
+  <a href="{{ '' if page.url == '/' else '/' }}#depannage" class="topbar-urgent">
+    <span class="pulse-dot" aria-hidden="true"></span> Dépannage rapide
+  </a>
+</div>
+
+<!-- Navigation -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="{{ '#' if page.url == '/' else '/' }}" class="logo"><img src="/img/logo-fgm-renov.png" alt="FGM RENOV — accueil" width="56" height="56"></a>
+
+    <nav aria-label="Menu principal">
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="{{ '' if page.url == '/' else '/' }}#services">Services</a></li>
+        <li><a href="/realisations/">Réalisations</a></li>
+        <li><a href="{{ '' if page.url == '/' else '/' }}#depannage">Dépannage</a></li>
+        <li><a href="{{ '' if page.url == '/' else '/' }}#avis">Avis</a></li>
+        <li><a href="{{ '' if page.url == '/' else '/' }}#zone">Zone</a></li>
+        <li><a href="{{ '' if page.url == '/' else '/' }}#faq">FAQ</a></li>
+        <li><a href="{{ '' if page.url == '/' else '/' }}#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <a href="{{ '' if page.url == '/' else '/' }}#contact" class="nav-cta">Devis gratuit</a>
+  </div>
+</header>
+
+<main id="main">
+{% block main %}{% endblock %}
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="{{ '#' if page.url == '/' else '/' }}" class="footer-logo"><img src="/img/logo-fgm-renov.png" alt="FGM RENOV" width="88" height="88" loading="lazy"></a>
+      <p class="footer-tag">Artisan rénovation intérieure<br>Saint-Philbert-sur-Risle &amp; Vallée de la Risle</p>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li><a href="/renovation-salle-de-bain/">Salle de bain</a></li>
+        <li><a href="/douche-senior-maprimeadapt/">Douche senior &amp; aides</a></li>
+        <li><a href="/carrelage-faience/">Carrelage &amp; Faïence</a></li>
+        <li><a href="{{ '' if page.url == '/' else '/' }}#services">Placo &amp; Cloisons</a></li>
+        <li><a href="{{ '' if page.url == '/' else '/' }}#services">Parquet &amp; Cuisine</a></li>
+        <li><a href="/depannage-volet-roulant/">Volets roulants</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+33768813152">07 68 81 31 52</a></li>
+        <li><a href="mailto:fgmrenov@gmail.com">fgmrenov@gmail.com</a></li>
+        <li>Saint-Philbert-sur-Risle (27290)</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Liens</h4>
+      <ul>
+        <li><a href="{{ '' if page.url == '/' else '/' }}#avis">Avis clients</a></li>
+        <li><a href="/realisations/">Réalisations</a></li>
+        <li><a href="{{ '' if page.url == '/' else '/' }}#depannage">Dépannage</a></li>
+        <li><a href="{{ '' if page.url == '/' else '/' }}#zone">Zone d'intervention</a></li>
+        <li><a href="{{ '' if page.url == '/' else '/' }}#faq">Questions fréquentes</a></li>
+      </ul>
+      <p class="footer-zone" style="margin-top:14px;">Pont-Audemer · Bernay · Honfleur · Rouen · Le Havre</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span id="year">2026</span> FGM&nbsp;RENOV — Filipe ALBINO TEIXEIRA, EI · SIRET 843&nbsp;087&nbsp;669&nbsp;00035</p>
+    <p class="footer-legal"><a href="/mentions-legales.html">Mentions légales</a> · <a href="/confidentialite.html">Confidentialité</a> · <a href="/confidentialite.html#cookies" data-consent-open>Cookies</a> · Site réalisé par <a href="https://lesage.agency" rel="noopener">Lesage Agency</a></p>
+  </div>
+</footer>
+
+<!-- Mobile sticky bar -->
+<div class="mobile-stick" id="mobileStick" role="complementary" aria-label="Contact rapide FGM RENOV">
+  <a href="tel:+33768813152" class="ms-btn ms-phone" aria-label="Appeler FGM RENOV au 07 68 81 31 52"><svg class="ico-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>Appeler</span></a>
+  <a href="{{ '' if page.url == '/' else '/' }}#contact" class="ms-btn ms-devis">Devis gratuit</a>
+</div>
+<script>
+/* Barre d'appel masquée tant que la topbar (qui affiche déjà le numéro) est à l'écran :
+   la photo du hero s'affiche en entier à l'arrivée, et le numéro reste toujours accessible.
+   Script en ligne juste après la barre : il s'exécute avant l'affichage (pas de clignotement).
+   Sans IntersectionObserver ou sans JS, la barre reste simplement visible. */
+(function () {
+  var bar = document.getElementById('mobileStick'), topbar = document.querySelector('.topbar');
+  if (!bar || !topbar || !('IntersectionObserver' in window)) return;
+  bar.classList.add('is-hidden');
+  new IntersectionObserver(function (e) {
+    bar.classList.toggle('is-hidden', e[0].isIntersecting);
+  }).observe(topbar);
+})();
+</script>
+
+<script src="/js/main.js?v=7" defer></script>
+<script src="/js/consent.js?v=2" defer></script>
+</body>
+</html>

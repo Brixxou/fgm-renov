@@ -1,0 +1,13 @@
+{
+  "name": "fgm-renov",
+  "private": true,
+  "description": "Site FGM RENOV — généré avec Eleventy",
+  "type": "module",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.7"
+  }
+}

@@ -55,3 +55,18 @@ Concept 1 — "L'Atelier" (warm · premium · artisanal).
 - [ ] Soumettre `sitemap.xml` dans Google Search Console.
 - [ ] Générer `apple-touch-icon.png` (180×180 px).
 - [ ] Convertir les photos en WebP pour performance (optionnel).
+
+## Développement (Eleventy)
+
+Le site est généré par [Eleventy](https://www.11ty.dev/) : les pages sont dans `src/`,
+le gabarit commun dans `src/_includes/base.njk`, les données dans `src/_data/`.
+
+```bash
+npm install        # une fois
+npm run serve      # aperçu local avec rechargement
+npm run build      # génère _site/ (c'est ce que Netlify publie)
+```
+
+- `css/`, `js/`, `img/`, `fonts/` et les pages légales sont copiés tels quels dans `_site/`.
+- Le sitemap est généré : une page entre dedans avec `sitemap: true` dans son en-tête.
+- Une FAQ de page s'écrit une seule fois (champ `faq`) : le texte visible et les données structurées en dérivent.

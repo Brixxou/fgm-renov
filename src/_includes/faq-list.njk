@@ -1,0 +1,20 @@
+  <section class="faq page-section" aria-labelledby="faq-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="kicker">Questions fréquentes</p>
+        <h2 id="faq-title">Vos questions, nos réponses</h2>
+        <hr>
+      </header>
+      <div class="faq-list">
+{%- for f in faq %}
+        <details class="faq-item">
+          <summary>{{ f.q }}</summary>
+          <div class="faq-answer"><p>{{ f.a }}</p></div>
+        </details>
+{%- endfor %}
+      </div>
+{%- if faqNote %}
+      <p class="faq-cta">{{ faqNote | safe }}</p>
+{%- endif %}
+    </div>
+  </section>

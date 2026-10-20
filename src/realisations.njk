@@ -1,0 +1,35 @@
+---
+permalink: "/realisations/"
+title: "Nos réalisations : avant / après de rénovation | FGM RENOV"
+description: "Avant / après de nos chantiers de rénovation près de Pont-Audemer : salles de bain, douches à l'italienne, cuisine, peinture, papier peint, sols."
+sitemap: true
+images: ["pose-cuisine-equipee-apres", "renovation-salle-d-eau-travertin-apres", "douche-italienne-zellige-vert-apres", "sejour-murs-repeints-apres", "sejour-papier-peint-feuillage-apres", "douche-colonne-thermostatique", "salle-de-bain-double-vasque-miroir-led", "chambre-pose-sol-stratifie"]
+crumb: "Nos réalisations"
+kicker: "Réalisations"
+heroTitle: "Nos <i>réalisations</i>"
+lead: "Des chantiers réels, photographiés avant et après. Sur les comparateurs, faites glisser le curseur pour voir la différence."
+serviceName: "Rénovation intérieure"
+serviceType: "Rénovation intérieure"
+---
+{% extends "base.njk" %}
+{% block head %}
+{% include "service-schema.njk" %}
+{% endblock %}
+{% block main %}
+{% include "page-hero.njk" %}
+
+  <section class="realisations page-section" aria-labelledby="real-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="kicker">Avant · Après</p>
+        <h2 id="real-title">Faites glisser pour comparer</h2>
+        <hr>
+      </header>
+{% include "compare-grid.njk" %}
+{% include "realisations-extra.njk" %}
+    </div>
+  </section>
+
+{% include "related.njk" %}
+{% include "cta.njk" %}
+{% endblock %}

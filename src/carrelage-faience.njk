@@ -1,0 +1,85 @@
+---
+permalink: "/carrelage-faience/"
+title: "Carreleur près de Pont-Audemer · Carrelage et faïence | FGM RENOV"
+description: "Pose de carrelage et de faïence près de Pont-Audemer : sols et murs, grand et petit format, salle de bain, cuisine. Artisan local, devis gratuit sous 48 h."
+sitemap: true
+images: ["douche-italienne-zellige-vert-apres", "douche-italienne-zellige-bleu", "renovation-salle-d-eau-travertin-apres"]
+crumb: "Carrelage et faïence"
+kicker: "Carrelage"
+heroTitle: "Pose de <i>carrelage et de faïence</i>"
+lead: "Sols et murs, grand et petit format : nous posons carrelage et faïence avec des finitions nettes, de la préparation du support aux joints."
+serviceName: "Pose de carrelage et faïence"
+serviceType: "Carrelage et faïence"
+faq: [{"q": "Posez-vous du carrelage grand format ?", "a": "Oui, du grand comme du petit format, au sol comme au mur, en intérieur comme en extérieur."}, {"q": "Faut-il retirer l'ancien carrelage ?", "a": "Pas toujours. Selon l'état du support, nous déposons l'ancien revêtement ou nous préparons la surface. Nous vous conseillons lors de la visite."}]
+---
+{% extends "base.njk" %}
+{% block head %}
+{% include "service-schema.njk" %}
+{% endblock %}
+{% block main %}
+{% include "page-hero.njk" %}
+
+  <section class="page-section" aria-labelledby="presta-carr-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="kicker">Prestations</p>
+        <h2 id="presta-carr-title">Ce que nous posons</h2>
+        <hr>
+      </header>
+      <ul class="checks">
+        <li>Carrelage au sol, intérieur et extérieur</li>
+        <li>Faïence murale de salle de bain</li>
+        <li>Crédence de cuisine</li>
+        <li>Grand format et petit format</li>
+        <li>Zellige et faïence décorative</li>
+        <li>Dépose de l'ancien revêtement et ragréage</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="page-section alt" aria-labelledby="etapes-carr-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="kicker">Méthode</p>
+        <h2 id="etapes-carr-title">Comment se passe la pose</h2>
+        <hr>
+      </header>
+      <ol class="steps">
+        <li><strong>Visite et conseil</strong><p>Choix du format et du plan de pose, sur place et sans engagement.</p></li>
+        <li><strong>Devis sous 48 h</strong><p>Détaillé, préparation du support comprise.</p></li>
+        <li><strong>Préparation</strong><p>Dépose de l'ancien revêtement si besoin, ragréage, protection.</p></li>
+        <li><strong>Pose</strong><p>Au millimètre, coupes propres autour des angles et des équipements.</p></li>
+        <li><strong>Joints et nettoyage</strong><p>Joints réguliers, chantier laissé propre.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="page-section" aria-labelledby="real-carr-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="kicker">Réalisations</p>
+        <h2 id="real-carr-title">Nos poses de carrelage et faïence</h2>
+        <hr>
+      </header>
+      <div class="gallery-extra" aria-label="Carrelage et faïence">
+        <figure>
+          <picture><source srcset="/img/douche-italienne-zellige-vert-apres.webp" type="image/webp"><img src="/img/douche-italienne-zellige-vert-apres.jpg" alt="Douche à l'italienne : faïence zellige vert sauge, receveur extra-plat, robinetterie dorée" loading="lazy" width="800" height="1066"></picture>
+          <figcaption>Douche de plain-pied — zellige vert sauge</figcaption>
+        </figure>
+        <figure>
+          <picture><source srcset="/img/douche-italienne-zellige-bleu.webp" type="image/webp"><img src="/img/douche-italienne-zellige-bleu.jpg" alt="Douche à l'italienne : faïence bleue verticale, pommeau pluie doré brossé" loading="lazy" width="800" height="1066"></picture>
+          <figcaption>Douche à l'italienne — faïence zellige bleue</figcaption>
+        </figure>
+        <figure>
+          <picture><source srcset="/img/renovation-salle-d-eau-travertin-apres.webp" type="image/webp"><img src="/img/renovation-salle-d-eau-travertin-apres.jpg" alt="Salle d'eau rénovée : travertin au sol, faïence bleu clair, WC suspendu, vasque pierre" loading="lazy" width="800" height="1066"></picture>
+          <figcaption>Salle d'eau — travertin &amp; faïence</figcaption>
+        </figure>
+      </div>
+      <p class="real-more"><a href="/realisations/" class="btn-outline btn-outline-dark">Voir toutes nos réalisations →</a></p>
+    </div>
+  </section>
+
+{% include "faq-list.njk" %}
+{% include "related.njk" %}
+{% include "cta.njk" %}
+{% endblock %}

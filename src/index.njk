@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="#1A1614">
-
-  <title>Artisan rénovation Saint-Philbert-sur-Risle &amp; Pont-Audemer (27) | FGM RENOV</title>
-  <meta name="description" content="Artisan rénovation basé à Saint-Philbert-sur-Risle, près de Pont-Audemer (27) : salle de bain, carrelage, placo, parquet, cuisine. Devis gratuit sous 48h.">
+---
+permalink: /
+sitemap: true
+images: ["pose-cuisine-equipee-apres", "renovation-salle-d-eau-travertin-apres", "douche-italienne-zellige-vert-apres"]
+title: "Artisan rénovation Saint-Philbert-sur-Risle &amp; Pont-Audemer (27) | FGM RENOV"
+description: "Artisan rénovation basé à Saint-Philbert-sur-Risle, près de Pont-Audemer (27) : salle de bain, carrelage, placo, parquet, cuisine. Devis gratuit sous 48h."
+---
+{% extends "base.njk" %}
+{% block headmeta %}
   <meta name="keywords" content="artisan Saint-Philbert-sur-Risle, artisan Pont-Audemer, rénovation intérieure Eure, salle de bain, carrelage Bernay, faïence, placo BA13, parquet, cuisine, volets roulants, dépannage, Bourg-Achard, Beuzeville, Montfort-sur-Risle, Brionne, Vallée de la Risle">
   <meta name="author" content="FGM RENOV">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -14,8 +14,8 @@
   <meta name="geo.placename" content="Saint-Philbert-sur-Risle">
   <meta name="geo.position" content="49.2798;0.6499">
   <meta name="ICBM" content="49.2798, 0.6499">
-  <link rel="canonical" href="https://www.fgmrenov.fr/">
-
+{% endblock %}
+{% block social %}
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_FR">
@@ -34,20 +34,8 @@
   <meta name="twitter:description" content="Rénovation intérieure de qualité. Devis gratuit 48h. ☎ 07 68 81 31 52.">
   <meta name="twitter:image" content="https://www.fgmrenov.fr/img/og-fgm-renov.JPG">
 
-  <!-- Favicon -->
-  <link rel="icon" href="/favicon.ico" sizes="48x48">
-  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
-
-
-  <link rel="stylesheet" href="/css/style.css?v=12">
-
-  <!-- Polices hébergées sur le site (plus de requête vers Google) : on précharge
-       les deux graisses visibles dès l'arrivée (slogan + sur-titre du hero). -->
-  <link rel="preload" href="/fonts/barlow-semi-condensed-600-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/lato-700-latin.woff2" as="font" type="font/woff2" crossorigin>
-
+{% endblock %}
+{% block head %}
   <!-- JSON-LD : @graph complet (LocalBusiness · Services · FAQ · WebSite · Breadcrumb) -->
   <script type="application/ld+json">
   {
@@ -154,6 +142,7 @@
               "itemOffered": {
                 "@type": "Service",
                 "name": "R\u00e9novation de salle de bain",
+                "url": "https://www.fgmrenov.fr/renovation-salle-de-bain/",
                 "serviceType": "R\u00e9novation salle de bain cl\u00e9 en main",
                 "description": "R\u00e9novation compl\u00e8te : plomberie, carrelage, fa\u00efence, vasque, douche \u00e0 l'italienne, WC suspendus, s\u00e8che-serviettes.",
                 "provider": { "@id": "https://www.fgmrenov.fr/#business" },
@@ -165,6 +154,7 @@
               "itemOffered": {
                 "@type": "Service",
                 "name": "Pose de carrelage et fa\u00efence",
+                "url": "https://www.fgmrenov.fr/carrelage-faience/",
                 "serviceType": "Carrelage et fa\u00efence",
                 "description": "Pose de carrelage et fa\u00efence pour sols et murs, int\u00e9rieur comme ext\u00e9rieur, grand et petit format.",
                 "provider": { "@id": "https://www.fgmrenov.fr/#business" },
@@ -209,6 +199,7 @@
               "itemOffered": {
                 "@type": "Service",
                 "name": "Pose et d\u00e9pannage de volets roulants",
+                "url": "https://www.fgmrenov.fr/depannage-volet-roulant/",
                 "serviceType": "Volets roulants et d\u00e9pannage",
                 "description": "Pose, motorisation et d\u00e9pannage de volets roulants toutes marques. Intervention rapide en Vall\u00e9e de la Risle.",
                 "provider": { "@id": "https://www.fgmrenov.fr/#business" },
@@ -250,7 +241,7 @@
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.fgmrenov.fr/" },
           { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.fgmrenov.fr/#services" },
-          { "@type": "ListItem", "position": 3, "name": "R\u00e9alisations", "item": "https://www.fgmrenov.fr/#realisations" },
+          { "@type": "ListItem", "position": 3, "name": "R\u00e9alisations", "item": "https://www.fgmrenov.fr/realisations/" },
           { "@type": "ListItem", "position": 4, "name": "Contact", "item": "https://www.fgmrenov.fr/#contact" }
         ]
       },
@@ -311,47 +302,8 @@
     ]
   }
   </script>
-</head>
-<body>
-
-<!-- Skip link accessibility -->
-<a href="#main" class="skip-link">Aller au contenu principal</a>
-
-<!-- Top bar mobile : tel + dépannage -->
-<div class="topbar">
-  <a href="tel:+33768813152" class="topbar-phone" aria-label="Appeler FGM RENOV">
-    <svg class="ico-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 07 68 81 31 52
-  </a>
-  <a href="#depannage" class="topbar-urgent">
-    <span class="pulse-dot" aria-hidden="true"></span> Dépannage rapide
-  </a>
-</div>
-
-<!-- Navigation -->
-<header class="nav" id="nav">
-  <div class="nav-inner">
-    <a href="#" class="logo"><img src="/img/logo-fgm-renov.png" alt="FGM RENOV — accueil" width="56" height="56"></a>
-
-    <nav aria-label="Menu principal">
-      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Ouvrir le menu">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#realisations">Réalisations</a></li>
-        <li><a href="#depannage">Dépannage</a></li>
-        <li><a href="#avis">Avis</a></li>
-        <li><a href="#zone">Zone</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
-    <a href="#contact" class="nav-cta">Devis gratuit</a>
-  </div>
-</header>
-
-<main id="main">
+{% endblock %}
+{% block main %}
 
   <!-- Hero -->
   <section class="hero">
@@ -392,6 +344,7 @@
             <li>WC suspendus</li>
             <li>Plomberie complète</li>
           </ul>
+          <p class="service-more"><a href="/renovation-salle-de-bain/">Rénovation de salle de bain →</a><a href="/douche-senior-maprimeadapt/">Douche senior &amp; aides →</a></p>
         </article>
 
         <article class="service-card">
@@ -403,6 +356,7 @@
             <li>Grand et petit format</li>
             <li>Joints parfaits</li>
           </ul>
+          <p class="service-more"><a href="/carrelage-faience/">Carrelage &amp; faïence →</a></p>
         </article>
 
         <article class="service-card">
@@ -447,6 +401,7 @@
             <li>Dépannage rapide</li>
             <li>Toutes marques</li>
           </ul>
+          <p class="service-more"><a href="/depannage-volet-roulant/">Dépannage de volet roulant →</a></p>
         </article>
 
       </div>
@@ -462,98 +417,9 @@
         <hr>
       </header>
 
-      <div class="compare-grid">
+{% include "compare-grid.njk" %}
 
-        <figure class="compare-item">
-          <div class="compare" data-compare aria-label="Comparateur avant/après — cuisine équipée">
-            <picture><source srcset="/img/pose-cuisine-equipee-apres.webp" type="image/webp"><img class="compare-after" src="/img/pose-cuisine-equipee-apres.jpg" alt="Après : cuisine équipée blanche avec plan de travail, crédence et plaque induction, posée par FGM RENOV" loading="lazy" width="800" height="1066"></picture>
-            <div class="compare-before">
-              <picture><source srcset="/img/pose-cuisine-equipee-avant.webp" type="image/webp"><img src="/img/pose-cuisine-equipee-avant.jpg" alt="Avant : pièce vide avec ancienne moquette bleue, sans aménagement de cuisine" loading="lazy" width="800" height="1066"></picture>
-            </div>
-            <div class="compare-handle" aria-hidden="true"><span>⇔</span></div>
-            <span class="compare-lbl compare-lbl-av">Avant</span>
-            <span class="compare-lbl compare-lbl-ap">Après</span>
-            <input type="range" min="0" max="100" value="50" class="compare-range" aria-label="Position du curseur avant/après">
-          </div>
-          <figcaption>Pose de cuisine équipée — Vallée de la Risle</figcaption>
-        </figure>
-
-        <figure class="compare-item">
-          <div class="compare" data-compare aria-label="Comparateur avant/après — salle d'eau et WC">
-            <picture><source srcset="/img/renovation-salle-d-eau-travertin-apres.webp" type="image/webp"><img class="compare-after" src="/img/renovation-salle-d-eau-travertin-apres.jpg" alt="Après : salle d'eau rénovée — travertin au sol, faïence bleu clair, WC suspendu, vasque pierre, robinetterie dorée" loading="lazy" width="800" height="1066"></picture>
-            <div class="compare-before">
-              <picture><source srcset="/img/renovation-salle-d-eau-travertin-avant.webp" type="image/webp"><img src="/img/renovation-salle-d-eau-travertin-avant.jpg" alt="Avant : ancienne salle d'eau avec carrelage blanc fleuri et plomberie apparente" loading="lazy" width="800" height="1066"></picture>
-            </div>
-            <div class="compare-handle" aria-hidden="true"><span>⇔</span></div>
-            <span class="compare-lbl compare-lbl-av">Avant</span>
-            <span class="compare-lbl compare-lbl-ap">Après</span>
-            <input type="range" min="0" max="100" value="50" class="compare-range" aria-label="Position du curseur avant/après">
-          </div>
-          <figcaption>Rénovation salle d'eau complète — travertin &amp; vasque pierre</figcaption>
-        </figure>
-
-        <figure class="compare-item">
-          <div class="compare" data-compare aria-label="Comparateur avant/après — douche à l'italienne">
-            <picture><source srcset="/img/douche-italienne-zellige-vert-apres.webp" type="image/webp"><img class="compare-after" src="/img/douche-italienne-zellige-vert-apres.jpg" alt="Après : douche à l'italienne — faïence zellige vert sauge, receveur extra-plat, robinetterie dorée" loading="lazy" width="800" height="1066"></picture>
-            <div class="compare-before">
-              <picture><source srcset="/img/douche-italienne-zellige-vert-avant.webp" type="image/webp"><img src="/img/douche-italienne-zellige-vert-avant.jpg" alt="Avant : ancienne salle d'eau avec carrelage fleuri et plomberie apparente" loading="lazy" width="800" height="1066"></picture>
-            </div>
-            <div class="compare-handle" aria-hidden="true"><span>⇔</span></div>
-            <span class="compare-lbl compare-lbl-av">Avant</span>
-            <span class="compare-lbl compare-lbl-ap">Après</span>
-            <input type="range" min="0" max="100" value="50" class="compare-range" aria-label="Position du curseur avant/après">
-          </div>
-          <figcaption>Douche à l'italienne — faïence zellige vert sauge</figcaption>
-        </figure>
-
-      </div>
-
-      <!-- Avant / après photographiés sous des angles différents : présentés côte à côte
-           (le curseur de comparaison exige deux photos alignées) -->
-      <div class="pairs" aria-label="Rénovation d'un séjour, avant et après">
-        <figure class="compare-item pair">
-          <div class="pair-imgs">
-            <div class="pair-img"><picture><source srcset="/img/sejour-mur-rouge-avant.webp" type="image/webp"><img src="/img/sejour-mur-rouge-avant.jpg" alt="Avant : séjour avec un mur tapissé de rouge et des corniches en bois foncé" loading="lazy" width="600" height="800"></picture><span class="compare-lbl compare-lbl-av">Avant</span></div>
-            <div class="pair-img"><picture><source srcset="/img/sejour-murs-repeints-apres.webp" type="image/webp"><img src="/img/sejour-murs-repeints-apres.jpg" alt="Après : murs repeints en beige et taupe, corniches éclaircies" loading="lazy" width="600" height="800"></picture><span class="compare-lbl compare-lbl-ap">Après</span></div>
-          </div>
-          <figcaption>Séjour — murs et corniches repeints</figcaption>
-        </figure>
-        <figure class="compare-item pair">
-          <div class="pair-imgs">
-            <div class="pair-img"><picture><source srcset="/img/sejour-lambris-bois-avant.webp" type="image/webp"><img src="/img/sejour-lambris-bois-avant.jpg" alt="Avant : mur en lambris bois foncé à côté de la cheminée à insert" loading="lazy" width="600" height="800"></picture><span class="compare-lbl compare-lbl-av">Avant</span></div>
-            <div class="pair-img"><picture><source srcset="/img/sejour-papier-peint-feuillage-apres.webp" type="image/webp"><img src="/img/sejour-papier-peint-feuillage-apres.jpg" alt="Après : papier peint à motif feuillage sur le mur, à côté de la cheminée à insert" loading="lazy" width="600" height="800"></picture><span class="compare-lbl compare-lbl-ap">Après</span></div>
-          </div>
-          <figcaption>Séjour — papier peint feuillage à la place du lambris</figcaption>
-        </figure>
-      </div>
-
-      <!-- Galerie complémentaire -->
-      <div class="gallery-extra" aria-label="Autres réalisations">
-        <figure>
-          <picture><source srcset="/img/douche-colonne-thermostatique.webp" type="image/webp"><img src="/img/douche-colonne-thermostatique.jpg" alt="Douche rénovée : colonne de douche thermostatique chromée, faïence beige texturée et tablettes d'angle" loading="lazy" width="800" height="1067"></picture>
-          <figcaption>Douche — colonne thermostatique &amp; faïence texturée</figcaption>
-        </figure>
-        <figure>
-          <picture><source srcset="/img/salle-de-bain-double-vasque-miroir-led.webp" type="image/webp"><img src="/img/salle-de-bain-double-vasque-miroir-led.jpg" alt="Salle de bain rénovée : meuble double vasque en bois, miroir LED et grand carrelage clair" loading="lazy" width="800" height="1067"></picture>
-          <figcaption>Salle de bain — double vasque &amp; miroir LED</figcaption>
-        </figure>
-        <figure>
-          <picture><source srcset="/img/douche-italienne-zellige-bleu.webp" type="image/webp"><img src="/img/douche-italienne-zellige-bleu.jpg" alt="Douche à l'italienne : faïence bleue verticale, pommeau pluie doré brossé" loading="lazy" width="800" height="1066"></picture>
-          <figcaption>Douche à l'italienne — faïence zellige bleue</figcaption>
-        </figure>
-        <figure>
-          <picture><source srcset="/img/salon-peinture-verte-parquet.webp" type="image/webp"><img src="/img/salon-peinture-verte-parquet.jpg" alt="Salon rénové : mur peint vert, parquet clair, ambiance lumineuse" loading="lazy" width="800" height="1066"></picture>
-          <figcaption>Salon — peinture &amp; parquet</figcaption>
-        </figure>
-        <figure>
-          <picture><source srcset="/img/seche-serviettes-dore-vasque-pierre.webp" type="image/webp"><img src="/img/seche-serviettes-dore-vasque-pierre.jpg" alt="Salle d'eau rénovée : sèche-serviettes doré, vasque pierre sur meuble bois massif, robinetterie dorée" loading="lazy" width="800" height="1066"></picture>
-          <figcaption>Sèche-serviettes &amp; vasque pierre</figcaption>
-        </figure>
-        <figure>
-          <picture><source srcset="/img/chambre-pose-sol-stratifie.webp" type="image/webp"><img src="/img/chambre-pose-sol-stratifie.jpg" alt="Chambre : sol stratifié effet chêne clair posé autour d'une cheminée d'époque" loading="lazy" width="1000" height="750"></picture>
-          <figcaption>Chambre — pose de sol stratifié</figcaption>
-        </figure>
-      </div>
+      <p class="real-more"><a href="/realisations/" class="btn-outline btn-outline-dark">Voir toutes nos réalisations →</a></p>
     </div>
   </section>
 
@@ -907,73 +773,4 @@
     </div>
   </section>
 
-</main>
-
-<!-- Footer -->
-<footer class="footer">
-  <div class="container footer-grid">
-    <div>
-      <a href="#" class="footer-logo"><img src="/img/logo-fgm-renov.png" alt="FGM RENOV" width="88" height="88" loading="lazy"></a>
-      <p class="footer-tag">Artisan rénovation intérieure<br>Saint-Philbert-sur-Risle &amp; Vallée de la Risle</p>
-    </div>
-    <div>
-      <h4>Services</h4>
-      <ul>
-        <li><a href="#services">Salle de bain</a></li>
-        <li><a href="#services">Carrelage &amp; Faïence</a></li>
-        <li><a href="#services">Placo &amp; Cloisons</a></li>
-        <li><a href="#services">Parquet</a></li>
-        <li><a href="#services">Cuisine</a></li>
-        <li><a href="#services">Volets roulants</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Contact</h4>
-      <ul>
-        <li><a href="tel:+33768813152">07 68 81 31 52</a></li>
-        <li><a href="mailto:fgmrenov@gmail.com">fgmrenov@gmail.com</a></li>
-        <li>Saint-Philbert-sur-Risle (27290)</li>
-      </ul>
-    </div>
-    <div>
-      <h4>Liens</h4>
-      <ul>
-        <li><a href="#avis">Avis clients</a></li>
-        <li><a href="#realisations">Réalisations</a></li>
-        <li><a href="#depannage">Dépannage</a></li>
-        <li><a href="#zone">Zone d'intervention</a></li>
-        <li><a href="#faq">Questions fréquentes</a></li>
-      </ul>
-      <p class="footer-zone" style="margin-top:14px;">Pont-Audemer · Bernay · Honfleur · Rouen · Le Havre</p>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>© <span id="year">2026</span> FGM&nbsp;RENOV — Filipe ALBINO TEIXEIRA, EI · SIRET 843&nbsp;087&nbsp;669&nbsp;00035</p>
-    <p class="footer-legal"><a href="/mentions-legales.html">Mentions légales</a> · <a href="/confidentialite.html">Confidentialité</a> · <a href="/confidentialite.html#cookies" data-consent-open>Cookies</a> · Site réalisé par <a href="https://lesage.agency" rel="noopener">Lesage Agency</a></p>
-  </div>
-</footer>
-
-<!-- Mobile sticky bar -->
-<div class="mobile-stick" id="mobileStick" role="complementary" aria-label="Contact rapide FGM RENOV">
-  <a href="tel:+33768813152" class="ms-btn ms-phone" aria-label="Appeler FGM RENOV au 07 68 81 31 52"><svg class="ico-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>Appeler</span></a>
-  <a href="#contact" class="ms-btn ms-devis">Devis gratuit</a>
-</div>
-<script>
-/* Barre d'appel masquée tant que la topbar (qui affiche déjà le numéro) est à l'écran :
-   la photo du hero s'affiche en entier à l'arrivée, et le numéro reste toujours accessible.
-   Script en ligne juste après la barre : il s'exécute avant l'affichage (pas de clignotement).
-   Sans IntersectionObserver ou sans JS, la barre reste simplement visible. */
-(function () {
-  var bar = document.getElementById('mobileStick'), topbar = document.querySelector('.topbar');
-  if (!bar || !topbar || !('IntersectionObserver' in window)) return;
-  bar.classList.add('is-hidden');
-  new IntersectionObserver(function (e) {
-    bar.classList.toggle('is-hidden', e[0].isIntersecting);
-  }).observe(topbar);
-})();
-</script>
-
-<script src="/js/main.js?v=7" defer></script>
-<script src="/js/consent.js?v=2" defer></script>
-</body>
-</html>
+{% endblock %}

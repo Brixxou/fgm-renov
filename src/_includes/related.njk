@@ -1,0 +1,15 @@
+  <section class="page-section related" aria-labelledby="related-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="kicker">Nos autres services</p>
+        <h2 id="related-title">Ce que nous faisons aussi</h2>
+        <hr>
+      </header>
+      <ul class="related-grid">
+{%- for s in services %}{% if s.url != page.url %}
+        <li><a href="{{ s.url }}"><strong>{{ s.name }}</strong><span>{{ s.short }}</span></a></li>
+{%- endif %}{% endfor %}
+        <li><a href="/realisations/"><strong>Nos réalisations</strong><span>Avant / après de nos chantiers.</span></a></li>
+      </ul>
+    </div>
+  </section>
