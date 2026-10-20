@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.fgmrenov.fr/</loc>
-    <lastmod>2026-10-09</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -30,6 +30,31 @@
       <image:loc>https://www.fgmrenov.fr/img/douche-italienne-zellige-bleu.webp</image:loc>
       <image:caption>Douche à l'italienne en faïence zellige bleue avec pommeau pluie doré brossé</image:caption>
       <image:title>Douche zellige bleue — FGM RENOV</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.fgmrenov.fr/img/sejour-murs-repeints-apres.webp</image:loc>
+      <image:caption>Séjour rénové : murs repeints en beige et taupe, corniches éclaircies</image:caption>
+      <image:title>Peinture d'un séjour — FGM RENOV</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.fgmrenov.fr/img/sejour-papier-peint-feuillage-apres.webp</image:loc>
+      <image:caption>Séjour : pose de papier peint à motif feuillage à la place d'un lambris foncé</image:caption>
+      <image:title>Pose de papier peint — FGM RENOV</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.fgmrenov.fr/img/douche-colonne-thermostatique.webp</image:loc>
+      <image:caption>Douche rénovée avec colonne thermostatique et faïence beige texturée</image:caption>
+      <image:title>Rénovation de douche — FGM RENOV</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.fgmrenov.fr/img/salle-de-bain-double-vasque-miroir-led.webp</image:loc>
+      <image:caption>Salle de bain rénovée : meuble double vasque en bois et miroir LED</image:caption>
+      <image:title>Salle de bain double vasque — FGM RENOV</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.fgmrenov.fr/img/chambre-pose-sol-stratifie.webp</image:loc>
+      <image:caption>Chambre : pose de sol stratifié effet chêne clair</image:caption>
+      <image:title>Pose de sol stratifié — FGM RENOV</image:title>
     </image:image>
   </url>
 </urlset>

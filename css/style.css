@@ -653,6 +653,17 @@ section { padding: 72px 0; }
   margin-top: 14px;
   text-align: center;
 }
+/* Paires avant/après côte à côte (photos non alignées) */
+.pairs { display: grid; grid-template-columns: 1fr; gap: 32px; margin-bottom: 48px; }
+.pair-imgs { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; box-shadow: var(--shadow-lg); }
+.pair-img { position: relative; aspect-ratio: 3 / 4; overflow: hidden; background: #000; }
+.pair-img img { width: 100%; height: 100%; object-fit: cover; }
+.pair-img .compare-lbl { top: 10px; }
+.pair-img .compare-lbl-av { left: 10px; }
+.pair-img .compare-lbl-ap { right: 10px; }
+@media (min-width: 900px) {
+  .pairs { grid-template-columns: 1fr 1fr; gap: 24px; }
+}
 .compare {
   position: relative;
   width: 100%;
