@@ -94,6 +94,17 @@
     show(true);
   });
 
+  // Clics sur un numéro de téléphone : la première source de contacts de l'artisan.
+  // Comptés seulement si la mesure d'audience est acceptée (et toujours acceptée).
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="tel:"]');
+    if (!a || !loaded || read() !== 'granted') return;
+    window.gtag('event', 'click_to_call', {
+      link_location: (a.className || 'lien').split(' ')[0],
+      page_path: location.pathname
+    });
+  });
+
   var choice = read();
   if (choice === 'granted') loadGA();
   else if (choice === null) show();
