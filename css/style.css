@@ -1317,6 +1317,16 @@ section[id] { scroll-margin-top: calc(var(--nav-h) + 12px); }
 .related-grid strong { display: block; font-family: 'Barlow Semi Condensed', 'Arial Narrow', system-ui, sans-serif; font-size: 18px; font-weight: 600; color: var(--dark); margin-bottom: 4px; }
 .related-grid span { font-size: 14px; color: var(--warm); line-height: 1.5; }
 
+.communes-note { margin: -16px 0 24px; }
+.communes-band { margin-bottom: 30px; }
+.communes-band h3 { font-size: 20px; margin-bottom: 12px; padding-bottom: 6px; border-bottom: 2px solid var(--terra); }
+.communes-band h3 span { font-family: 'Lato', system-ui, sans-serif; font-size: 13px; font-weight: 400; color: var(--warm); }
+.communes-list { columns: 2; column-gap: 18px; font-size: 14px; line-height: 1.5; }
+.communes-list li { break-inside: avoid; padding: 3px 0; }
+.communes-list small { color: var(--warm); font-size: 11px; }
+@media (min-width: 640px) { .communes-list { columns: 3; } }
+@media (min-width: 900px) { .communes-list { columns: 4; } }
+
 .cta-band { background: var(--dark); color: var(--cream); padding: 48px 0; border-top: 4px solid var(--terra); }
 .cta-inner { display: grid; gap: 22px; align-items: center; }
 .cta-band h2 { color: var(--cream); font-size: clamp(26px, 4.6vw, 34px); margin-bottom: 8px; }

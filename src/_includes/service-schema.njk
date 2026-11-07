@@ -10,7 +10,7 @@
         "description": {{ description | dump | safe }},
         "url": "{{ site.url }}{{ page.url }}",
         "provider": { "@type": "HomeAndConstructionBusiness", "@id": "{{ site.url }}/#business", "name": "FGM RENOV", "telephone": "{{ site.phoneIntl }}", "url": "{{ site.url }}/" },
-        "areaServed": [{% for c in site.areaServed %}{ "@type": "City", "name": {{ c | dump | safe }} }{% if not loop.last %}, {% endif %}{% endfor %}]
+        "areaServed": [{% for c in (communes.all if useCommunes else site.areaServed) %}{ "@type": "City", "name": {{ c | dump | safe }} }{% if not loop.last %}, {% endif %}{% endfor %}]
       },
       {
         "@type": "BreadcrumbList",

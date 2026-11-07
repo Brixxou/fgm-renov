@@ -1,0 +1,1504 @@
+{
+ "total": 211,
+ "bands": [
+  {
+   "label": "À moins de 10 km",
+   "communes": [
+    {
+     "nom": "Appeville-Annebault",
+     "cp": "27290",
+     "km": 5.1,
+     "grande": false
+    },
+    {
+     "nom": "Authou",
+     "cp": "27290",
+     "km": 6.6,
+     "grande": false
+    },
+    {
+     "nom": "Boissey-le-Châtel",
+     "cp": "27520",
+     "km": 9.6,
+     "grande": false
+    },
+    {
+     "nom": "Bonneville-Aptot",
+     "cp": "27290",
+     "km": 7.7,
+     "grande": false
+    },
+    {
+     "nom": "Brestot",
+     "cp": "27350",
+     "km": 7.0,
+     "grande": false
+    },
+    {
+     "nom": "Brétigny",
+     "cp": "27800",
+     "km": 7.4,
+     "grande": false
+    },
+    {
+     "nom": "Campigny",
+     "cp": "27500",
+     "km": 7.5,
+     "grande": false
+    },
+    {
+     "nom": "Cauverville-en-Roumois",
+     "cp": "27350",
+     "km": 8.4,
+     "grande": false
+    },
+    {
+     "nom": "Colletot",
+     "cp": "27500",
+     "km": 8.0,
+     "grande": false
+    },
+    {
+     "nom": "Condé-sur-Risle",
+     "cp": "27290",
+     "km": 4.3,
+     "grande": false
+    },
+    {
+     "nom": "Corneville-sur-Risle",
+     "cp": "27500",
+     "km": 7.7,
+     "grande": false
+    },
+    {
+     "nom": "Écaquelon",
+     "cp": "27290",
+     "km": 4.9,
+     "grande": false
+    },
+    {
+     "nom": "Freneuse-sur-Risle",
+     "cp": "27290",
+     "km": 3.8,
+     "grande": false
+    },
+    {
+     "nom": "Glos-sur-Risle",
+     "cp": "27290",
+     "km": 2.7,
+     "grande": false
+    },
+    {
+     "nom": "Illeville-sur-Montfort",
+     "cp": "27290",
+     "km": 6.2,
+     "grande": false
+    },
+    {
+     "nom": "La Noë-Poulain",
+     "cp": "27560",
+     "km": 9.5,
+     "grande": false
+    },
+    {
+     "nom": "La Poterie-Mathieu",
+     "cp": "27560",
+     "km": 9.9,
+     "grande": false
+    },
+    {
+     "nom": "Le Bec-Hellouin",
+     "cp": "27800",
+     "km": 8.3,
+     "grande": false
+    },
+    {
+     "nom": "Le Mesnil-Saint-Jean",
+     "cp": "27560",
+     "km": 9.5,
+     "grande": false
+    },
+    {
+     "nom": "Livet-sur-Authou",
+     "cp": "27800",
+     "km": 5.5,
+     "grande": false
+    },
+    {
+     "nom": "Malleville-sur-le-Bec",
+     "cp": "27800",
+     "km": 8.1,
+     "grande": false
+    },
+    {
+     "nom": "Montfort-sur-Risle",
+     "cp": "27290",
+     "km": 2.2,
+     "grande": false
+    },
+    {
+     "nom": "Neuville-sur-Authou",
+     "cp": "27800",
+     "km": 8.2,
+     "grande": false
+    },
+    {
+     "nom": "Pont-Authou",
+     "cp": "27290",
+     "km": 5.9,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Benoît-des-Ombres",
+     "cp": "27450",
+     "km": 6.4,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Christophe-sur-Condé",
+     "cp": "27450",
+     "km": 3.5,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Étienne-l'Allier",
+     "cp": "27450",
+     "km": 6.9,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Georges-du-Vièvre",
+     "cp": "27450",
+     "km": 6.7,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Grégoire-du-Vièvre",
+     "cp": "27450",
+     "km": 4.3,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Léger-du-Gennetey",
+     "cp": "27520",
+     "km": 7.3,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Martin-Saint-Firmin",
+     "cp": "27450",
+     "km": 6.7,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Philbert-sur-Risle",
+     "cp": "27290",
+     "km": 0.0,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Pierre-de-Salerne",
+     "cp": "27800",
+     "km": 8.0,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Pierre-des-Ifs",
+     "cp": "27450",
+     "km": 3.4,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Siméon",
+     "cp": "27560",
+     "km": 9.4,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Victor-d'Épine",
+     "cp": "27800",
+     "km": 8.3,
+     "grande": false
+    },
+    {
+     "nom": "Thénouville",
+     "cp": "27290",
+     "km": 9.4,
+     "grande": false
+    },
+    {
+     "nom": "Thierville",
+     "cp": "27290",
+     "km": 5.2,
+     "grande": false
+    },
+    {
+     "nom": "Valletot",
+     "cp": "27350",
+     "km": 9.9,
+     "grande": false
+    },
+    {
+     "nom": "Voiscreville",
+     "cp": "27520",
+     "km": 8.5,
+     "grande": false
+    }
+   ]
+  },
+  {
+   "label": "De 10 à 15 km",
+   "communes": [
+    {
+     "nom": "Aclou",
+     "cp": "27800",
+     "km": 12.9,
+     "grande": false
+    },
+    {
+     "nom": "Bazoques",
+     "cp": "27230",
+     "km": 14.1,
+     "grande": false
+    },
+    {
+     "nom": "Berthouville",
+     "cp": "27800",
+     "km": 12.2,
+     "grande": false
+    },
+    {
+     "nom": "Boisney",
+     "cp": "27800",
+     "km": 13.8,
+     "grande": false
+    },
+    {
+     "nom": "Boissy-Lamberville",
+     "cp": "27300",
+     "km": 14.8,
+     "grande": false
+    },
+    {
+     "nom": "Bosrobert",
+     "cp": "27800",
+     "km": 10.2,
+     "grande": false
+    },
+    {
+     "nom": "Bouquetot",
+     "cp": "27310",
+     "km": 12.5,
+     "grande": false
+    },
+    {
+     "nom": "Bourg-Achard",
+     "cp": "27310",
+     "km": 13.5,
+     "grande": true
+    },
+    {
+     "nom": "Bourneville-Sainte-Croix",
+     "cp": "27500",
+     "km": 13.7,
+     "grande": false
+    },
+    {
+     "nom": "Brionne",
+     "cp": "27800",
+     "km": 11.5,
+     "grande": true
+    },
+    {
+     "nom": "Calleville",
+     "cp": "27800",
+     "km": 12.9,
+     "grande": false
+    },
+    {
+     "nom": "Épaignes",
+     "cp": "27260",
+     "km": 14.4,
+     "grande": false
+    },
+    {
+     "nom": "Épreville-en-Lieuvin",
+     "cp": "27560",
+     "km": 11.6,
+     "grande": false
+    },
+    {
+     "nom": "Étréville",
+     "cp": "27350",
+     "km": 10.8,
+     "grande": false
+    },
+    {
+     "nom": "Éturqueraye",
+     "cp": "27350",
+     "km": 10.3,
+     "grande": false
+    },
+    {
+     "nom": "Flancourt-Crescy-en-Roumois",
+     "cp": "27310",
+     "km": 10.5,
+     "grande": false
+    },
+    {
+     "nom": "Franqueville",
+     "cp": "27800",
+     "km": 12.1,
+     "grande": false
+    },
+    {
+     "nom": "Giverville",
+     "cp": "27560",
+     "km": 11.5,
+     "grande": false
+    },
+    {
+     "nom": "Hecmanville",
+     "cp": "27800",
+     "km": 11.8,
+     "grande": false
+    },
+    {
+     "nom": "Heudreville-en-Lieuvin",
+     "cp": "27230",
+     "km": 14.4,
+     "grande": false
+    },
+    {
+     "nom": "La Haye-Aubrée",
+     "cp": "27350",
+     "km": 13.2,
+     "grande": false
+    },
+    {
+     "nom": "La Haye-de-Calleville",
+     "cp": "27800",
+     "km": 13.7,
+     "grande": false
+    },
+    {
+     "nom": "La Haye-de-Routot",
+     "cp": "27350",
+     "km": 14.7,
+     "grande": false
+    },
+    {
+     "nom": "Le Favril",
+     "cp": "27230",
+     "km": 14.0,
+     "grande": false
+    },
+    {
+     "nom": "Le Perrey",
+     "cp": "27500",
+     "km": 14.1,
+     "grande": false
+    },
+    {
+     "nom": "Les Monts du Roumois",
+     "cp": "27370",
+     "km": 13.1,
+     "grande": false
+    },
+    {
+     "nom": "Les Préaux",
+     "cp": "27500",
+     "km": 13.6,
+     "grande": false
+    },
+    {
+     "nom": "Lieurey",
+     "cp": "27560",
+     "km": 11.9,
+     "grande": false
+    },
+    {
+     "nom": "Manneville-sur-Risle",
+     "cp": "27500",
+     "km": 11.8,
+     "grande": false
+    },
+    {
+     "nom": "Morsan",
+     "cp": "27800",
+     "km": 12.0,
+     "grande": false
+    },
+    {
+     "nom": "Noards",
+     "cp": "27560",
+     "km": 12.7,
+     "grande": false
+    },
+    {
+     "nom": "Notre-Dame-d'Épine",
+     "cp": "27800",
+     "km": 10.1,
+     "grande": false
+    },
+    {
+     "nom": "Pont-Audemer",
+     "cp": "27500",
+     "km": 11.7,
+     "grande": true
+    },
+    {
+     "nom": "Rougemontier",
+     "cp": "27350",
+     "km": 10.6,
+     "grande": false
+    },
+    {
+     "nom": "Routot",
+     "cp": "27350",
+     "km": 13.0,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Cyr-de-Salerne",
+     "cp": "27800",
+     "km": 10.8,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Denis-des-Monts",
+     "cp": "27520",
+     "km": 11.4,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Éloi-de-Fourques",
+     "cp": "27800",
+     "km": 12.1,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Mards-de-Blacarville",
+     "cp": "27500",
+     "km": 14.9,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Paul-de-Fourques",
+     "cp": "27800",
+     "km": 12.7,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Philbert-sur-Boissey",
+     "cp": "27520",
+     "km": 10.1,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Symphorien",
+     "cp": "27500",
+     "km": 14.4,
+     "grande": false
+    },
+    {
+     "nom": "Selles",
+     "cp": "27500",
+     "km": 12.1,
+     "grande": false
+    },
+    {
+     "nom": "Tocqueville",
+     "cp": "27500",
+     "km": 14.6,
+     "grande": false
+    },
+    {
+     "nom": "Tourville-sur-Pont-Audemer",
+     "cp": "27500",
+     "km": 10.8,
+     "grande": false
+    }
+   ]
+  },
+  {
+   "label": "De 15 à 20 km",
+   "communes": [
+    {
+     "nom": "Aizier",
+     "cp": "27500",
+     "km": 17.0,
+     "grande": false
+    },
+    {
+     "nom": "Asnières",
+     "cp": "27260",
+     "km": 19.8,
+     "grande": false
+    },
+    {
+     "nom": "Bailleul-la-Vallée",
+     "cp": "27260",
+     "km": 18.0,
+     "grande": false
+    },
+    {
+     "nom": "Barneville-sur-Seine",
+     "cp": "27310",
+     "km": 18.3,
+     "grande": false
+    },
+    {
+     "nom": "Barville",
+     "cp": "27230",
+     "km": 18.2,
+     "grande": false
+    },
+    {
+     "nom": "Bosgouet",
+     "cp": "27310",
+     "km": 16.4,
+     "grande": false
+    },
+    {
+     "nom": "Bosroumois",
+     "cp": "27670",
+     "km": 19.6,
+     "grande": true
+    },
+    {
+     "nom": "Bouquelon",
+     "cp": "27500",
+     "km": 18.2,
+     "grande": false
+    },
+    {
+     "nom": "Cormeilles",
+     "cp": "27260",
+     "km": 19.6,
+     "grande": false
+    },
+    {
+     "nom": "Courbépine",
+     "cp": "27300",
+     "km": 17.9,
+     "grande": false
+    },
+    {
+     "nom": "Duranville",
+     "cp": "27230",
+     "km": 18.6,
+     "grande": false
+    },
+    {
+     "nom": "Épégard",
+     "cp": "27110",
+     "km": 19.3,
+     "grande": false
+    },
+    {
+     "nom": "Folleville",
+     "cp": "27230",
+     "km": 16.2,
+     "grande": false
+    },
+    {
+     "nom": "Fontaine-la-Louvet",
+     "cp": "27230",
+     "km": 19.6,
+     "grande": false
+    },
+    {
+     "nom": "Fort-Moville",
+     "cp": "27210",
+     "km": 19.2,
+     "grande": false
+    },
+    {
+     "nom": "Fresne-Cauverville",
+     "cp": "27260",
+     "km": 15.9,
+     "grande": false
+    },
+    {
+     "nom": "Goupil-Othon",
+     "cp": "27170",
+     "km": 20.0,
+     "grande": false
+    },
+    {
+     "nom": "Grand Bourgtheroulde",
+     "cp": "27520",
+     "km": 15.2,
+     "grande": true
+    },
+    {
+     "nom": "Harcourt",
+     "cp": "27800",
+     "km": 15.5,
+     "grande": false
+    },
+    {
+     "nom": "Hauville",
+     "cp": "27350",
+     "km": 15.5,
+     "grande": false
+    },
+    {
+     "nom": "Honguemare-Guenouville",
+     "cp": "27310",
+     "km": 16.6,
+     "grande": false
+    },
+    {
+     "nom": "La Chapelle-Bayvel",
+     "cp": "27260",
+     "km": 17.9,
+     "grande": false
+    },
+    {
+     "nom": "La Haye-du-Theil",
+     "cp": "27370",
+     "km": 17.3,
+     "grande": false
+    },
+    {
+     "nom": "La Londe",
+     "cp": "76500",
+     "km": 19.6,
+     "grande": true
+    },
+    {
+     "nom": "La Neuville-du-Bosc",
+     "cp": "27890",
+     "km": 15.3,
+     "grande": false
+    },
+    {
+     "nom": "La Pyle",
+     "cp": "27370",
+     "km": 20.0,
+     "grande": false
+    },
+    {
+     "nom": "La Trinité-de-Thouberville",
+     "cp": "27310",
+     "km": 19.1,
+     "grande": false
+    },
+    {
+     "nom": "Le Bois-Hellain",
+     "cp": "27260",
+     "km": 18.8,
+     "grande": false
+    },
+    {
+     "nom": "Le Bosc du Theil",
+     "cp": "27370",
+     "km": 16.1,
+     "grande": false
+    },
+    {
+     "nom": "Le Landin",
+     "cp": "27350",
+     "km": 18.2,
+     "grande": false
+    },
+    {
+     "nom": "Le Theil-Nolent",
+     "cp": "27230",
+     "km": 16.6,
+     "grande": false
+    },
+    {
+     "nom": "Malouy",
+     "cp": "27300",
+     "km": 18.9,
+     "grande": false
+    },
+    {
+     "nom": "Martainville",
+     "cp": "27210",
+     "km": 19.5,
+     "grande": false
+    },
+    {
+     "nom": "Menneval",
+     "cp": "27300",
+     "km": 20.0,
+     "grande": false
+    },
+    {
+     "nom": "Morainville-Jouveaux",
+     "cp": "27260",
+     "km": 16.0,
+     "grande": false
+    },
+    {
+     "nom": "Nassandres sur Risle",
+     "cp": "27170",
+     "km": 16.3,
+     "grande": true
+    },
+    {
+     "nom": "Plasnes",
+     "cp": "27300",
+     "km": 16.0,
+     "grande": false
+    },
+    {
+     "nom": "Rouge-Perriers",
+     "cp": "27110",
+     "km": 20.0,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Aubin-de-Scellon",
+     "cp": "27230",
+     "km": 17.1,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Léger-de-Rôtes",
+     "cp": "27300",
+     "km": 18.4,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Maclou",
+     "cp": "27210",
+     "km": 19.7,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Meslin-du-Bosc",
+     "cp": "27370",
+     "km": 18.0,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Ouen-de-Thouberville",
+     "cp": "27310",
+     "km": 19.5,
+     "grande": true
+    },
+    {
+     "nom": "Saint-Pierre-du-Bosguérard",
+     "cp": "27370",
+     "km": 17.7,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Sulpice-de-Grimbouville",
+     "cp": "27210",
+     "km": 18.1,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Sylvestre-de-Cormeilles",
+     "cp": "27260",
+     "km": 16.9,
+     "grande": false
+    },
+    {
+     "nom": "Sainte-Opportune-du-Bosc",
+     "cp": "27110",
+     "km": 18.8,
+     "grande": false
+    },
+    {
+     "nom": "Sainte-Opportune-la-Mare",
+     "cp": "27680",
+     "km": 18.2,
+     "grande": false
+    },
+    {
+     "nom": "Serquigny",
+     "cp": "27470",
+     "km": 19.1,
+     "grande": false
+    },
+    {
+     "nom": "Thibouville",
+     "cp": "27800",
+     "km": 19.3,
+     "grande": false
+    },
+    {
+     "nom": "Tourville-la-Campagne",
+     "cp": "27370",
+     "km": 19.0,
+     "grande": false
+    },
+    {
+     "nom": "Toutainville",
+     "cp": "27500",
+     "km": 16.2,
+     "grande": false
+    },
+    {
+     "nom": "Triqueville",
+     "cp": "27500",
+     "km": 16.2,
+     "grande": false
+    },
+    {
+     "nom": "Trouville-la-Haule",
+     "cp": "27680",
+     "km": 16.5,
+     "grande": false
+    },
+    {
+     "nom": "Valailles",
+     "cp": "27300",
+     "km": 18.2,
+     "grande": false
+    },
+    {
+     "nom": "Vannecrocq",
+     "cp": "27210",
+     "km": 16.2,
+     "grande": false
+    },
+    {
+     "nom": "Vieux-Port",
+     "cp": "27680",
+     "km": 16.6,
+     "grande": false
+    }
+   ]
+  },
+  {
+   "label": "De 20 à 25 km",
+   "communes": [
+    {
+     "nom": "Amfreville-Saint-Amand",
+     "cp": "27370",
+     "km": 21.1,
+     "grande": false
+    },
+    {
+     "nom": "Arelaune-en-Seine",
+     "cp": "76940",
+     "km": 21.9,
+     "grande": true
+    },
+    {
+     "nom": "Beaumontel",
+     "cp": "27170",
+     "km": 22.6,
+     "grande": false
+    },
+    {
+     "nom": "Bernay",
+     "cp": "27300",
+     "km": 21.3,
+     "grande": true
+    },
+    {
+     "nom": "Beuzeville",
+     "cp": "27210",
+     "km": 23.6,
+     "grande": true
+    },
+    {
+     "nom": "Bonneville-la-Louvet",
+     "cp": "14130",
+     "km": 22.7,
+     "grande": false
+    },
+    {
+     "nom": "Boulleville",
+     "cp": "27210",
+     "km": 21.2,
+     "grande": false
+    },
+    {
+     "nom": "Bournainville-Faverolles",
+     "cp": "27230",
+     "km": 20.6,
+     "grande": false
+    },
+    {
+     "nom": "Bray",
+     "cp": "27170",
+     "km": 23.8,
+     "grande": false
+    },
+    {
+     "nom": "Caorches-Saint-Nicolas",
+     "cp": "27300",
+     "km": 23.9,
+     "grande": false
+    },
+    {
+     "nom": "Caumont",
+     "cp": "27310",
+     "km": 21.1,
+     "grande": false
+    },
+    {
+     "nom": "Conteville",
+     "cp": "27210",
+     "km": 24.0,
+     "grande": false
+    },
+    {
+     "nom": "Corneville-la-Fouquetière",
+     "cp": "27300",
+     "km": 24.7,
+     "grande": false
+    },
+    {
+     "nom": "Crestot",
+     "cp": "27110",
+     "km": 24.8,
+     "grande": false
+    },
+    {
+     "nom": "Crosville-la-Vieille",
+     "cp": "27110",
+     "km": 25.0,
+     "grande": false
+    },
+    {
+     "nom": "Drucourt",
+     "cp": "27230",
+     "km": 22.9,
+     "grande": false
+    },
+    {
+     "nom": "Écardenville-la-Campagne",
+     "cp": "27170",
+     "km": 21.7,
+     "grande": false
+    },
+    {
+     "nom": "Épreville-près-le-Neubourg",
+     "cp": "27110",
+     "km": 23.3,
+     "grande": false
+    },
+    {
+     "nom": "Fontaine-l'Abbé",
+     "cp": "27470",
+     "km": 21.5,
+     "grande": false
+    },
+    {
+     "nom": "Foulbec",
+     "cp": "27210",
+     "km": 20.7,
+     "grande": false
+    },
+    {
+     "nom": "Fouqueville",
+     "cp": "27370",
+     "km": 23.8,
+     "grande": false
+    },
+    {
+     "nom": "Fumichon",
+     "cp": "14590",
+     "km": 23.2,
+     "grande": false
+    },
+    {
+     "nom": "Hectomare",
+     "cp": "27110",
+     "km": 23.6,
+     "grande": false
+    },
+    {
+     "nom": "Heurteauville",
+     "cp": "76940",
+     "km": 22.0,
+     "grande": false
+    },
+    {
+     "nom": "Iville",
+     "cp": "27110",
+     "km": 23.2,
+     "grande": false
+    },
+    {
+     "nom": "Jumièges",
+     "cp": "76480",
+     "km": 21.1,
+     "grande": false
+    },
+    {
+     "nom": "L'Hôtellerie",
+     "cp": "14100",
+     "km": 23.4,
+     "grande": false
+    },
+    {
+     "nom": "La Bouille",
+     "cp": "76530",
+     "km": 22.1,
+     "grande": false
+    },
+    {
+     "nom": "La Chapelle-Hareng",
+     "cp": "27230",
+     "km": 25.0,
+     "grande": false
+    },
+    {
+     "nom": "La Lande-Saint-Léger",
+     "cp": "27210",
+     "km": 22.6,
+     "grande": false
+    },
+    {
+     "nom": "La Saussaye",
+     "cp": "27370",
+     "km": 24.8,
+     "grande": false
+    },
+    {
+     "nom": "Launay",
+     "cp": "27470",
+     "km": 20.2,
+     "grande": false
+    },
+    {
+     "nom": "Le Bec-Thomas",
+     "cp": "27370",
+     "km": 23.9,
+     "grande": false
+    },
+    {
+     "nom": "Le Faulq",
+     "cp": "14130",
+     "km": 24.3,
+     "grande": false
+    },
+    {
+     "nom": "Le Mesnil-sous-Jumièges",
+     "cp": "76480",
+     "km": 22.3,
+     "grande": false
+    },
+    {
+     "nom": "Le Neubourg",
+     "cp": "27110",
+     "km": 22.7,
+     "grande": true
+    },
+    {
+     "nom": "Le Pin",
+     "cp": "14590",
+     "km": 23.4,
+     "grande": false
+    },
+    {
+     "nom": "Le Thuit de l'Oison",
+     "cp": "27370",
+     "km": 21.1,
+     "grande": true
+    },
+    {
+     "nom": "Le Torpt",
+     "cp": "27210",
+     "km": 20.1,
+     "grande": false
+    },
+    {
+     "nom": "Le Troncq",
+     "cp": "27110",
+     "km": 21.4,
+     "grande": false
+    },
+    {
+     "nom": "Les Places",
+     "cp": "27230",
+     "km": 21.8,
+     "grande": false
+    },
+    {
+     "nom": "Marais-Vernier",
+     "cp": "27680",
+     "km": 22.3,
+     "grande": false
+    },
+    {
+     "nom": "Mauny",
+     "cp": "76530",
+     "km": 22.3,
+     "grande": false
+    },
+    {
+     "nom": "Moulineaux",
+     "cp": "76530",
+     "km": 23.3,
+     "grande": false
+    },
+    {
+     "nom": "Moyaux",
+     "cp": "14590",
+     "km": 23.7,
+     "grande": false
+    },
+    {
+     "nom": "Norville",
+     "cp": "76330",
+     "km": 22.3,
+     "grande": false
+    },
+    {
+     "nom": "Petiville",
+     "cp": "76330",
+     "km": 20.1,
+     "grande": false
+    },
+    {
+     "nom": "Piencourt",
+     "cp": "27230",
+     "km": 21.2,
+     "grande": false
+    },
+    {
+     "nom": "Plainville",
+     "cp": "27300",
+     "km": 25.0,
+     "grande": false
+    },
+    {
+     "nom": "Quillebeuf-sur-Seine",
+     "cp": "27680",
+     "km": 23.3,
+     "grande": false
+    },
+    {
+     "nom": "Sahurs",
+     "cp": "76113",
+     "km": 23.7,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Aubin-sur-Quillebeuf",
+     "cp": "27680",
+     "km": 21.0,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Martin-du-Tilleul",
+     "cp": "27300",
+     "km": 21.1,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Maurice-d'Ételan",
+     "cp": "76330",
+     "km": 20.2,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Ouen-de-Pontcheuil",
+     "cp": "27370",
+     "km": 22.4,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Ouen-du-Tilleul",
+     "cp": "27670",
+     "km": 21.8,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Pierre-de-Cormeilles",
+     "cp": "27260",
+     "km": 21.1,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Pierre-de-Manneville",
+     "cp": "76113",
+     "km": 24.9,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Pierre-des-Fleurs",
+     "cp": "27370",
+     "km": 23.0,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Pierre-du-Val",
+     "cp": "27210",
+     "km": 24.2,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Samson-de-la-Roque",
+     "cp": "27680",
+     "km": 22.8,
+     "grande": false
+    },
+    {
+     "nom": "Saint-Vincent-du-Boulay",
+     "cp": "27230",
+     "km": 23.2,
+     "grande": false
+    },
+    {
+     "nom": "Thiberville",
+     "cp": "27230",
+     "km": 22.3,
+     "grande": false
+    },
+    {
+     "nom": "Treis-Sants-en-Ouche",
+     "cp": "27270",
+     "km": 24.8,
+     "grande": false
+    },
+    {
+     "nom": "Vatteville-la-Rue",
+     "cp": "76940",
+     "km": 20.1,
+     "grande": false
+    },
+    {
+     "nom": "Villez-sur-le-Neubourg",
+     "cp": "27110",
+     "km": 21.1,
+     "grande": false
+    },
+    {
+     "nom": "Vitot",
+     "cp": "27110",
+     "km": 21.1,
+     "grande": false
+    },
+    {
+     "nom": "Yainville",
+     "cp": "76480",
+     "km": 23.8,
+     "grande": false
+    },
+    {
+     "nom": "Yville-sur-Seine",
+     "cp": "76530",
+     "km": 22.3,
+     "grande": false
+    }
+   ]
+  }
+ ],
+ "all": [
+  "Aclou",
+  "Aizier",
+  "Amfreville-Saint-Amand",
+  "Appeville-Annebault",
+  "Arelaune-en-Seine",
+  "Asnières",
+  "Authou",
+  "Bailleul-la-Vallée",
+  "Barneville-sur-Seine",
+  "Barville",
+  "Bazoques",
+  "Beaumontel",
+  "Bernay",
+  "Berthouville",
+  "Beuzeville",
+  "Boisney",
+  "Boissey-le-Châtel",
+  "Boissy-Lamberville",
+  "Bonneville-Aptot",
+  "Bonneville-la-Louvet",
+  "Bosgouet",
+  "Bosrobert",
+  "Bosroumois",
+  "Boulleville",
+  "Bouquelon",
+  "Bouquetot",
+  "Bourg-Achard",
+  "Bournainville-Faverolles",
+  "Bourneville-Sainte-Croix",
+  "Bray",
+  "Brestot",
+  "Brétigny",
+  "Brionne",
+  "Calleville",
+  "Campigny",
+  "Caorches-Saint-Nicolas",
+  "Caumont",
+  "Cauverville-en-Roumois",
+  "Colletot",
+  "Condé-sur-Risle",
+  "Conteville",
+  "Cormeilles",
+  "Corneville-la-Fouquetière",
+  "Corneville-sur-Risle",
+  "Courbépine",
+  "Crestot",
+  "Crosville-la-Vieille",
+  "Drucourt",
+  "Duranville",
+  "Écaquelon",
+  "Écardenville-la-Campagne",
+  "Épaignes",
+  "Épégard",
+  "Épreville-en-Lieuvin",
+  "Épreville-près-le-Neubourg",
+  "Étréville",
+  "Éturqueraye",
+  "Flancourt-Crescy-en-Roumois",
+  "Folleville",
+  "Fontaine-l'Abbé",
+  "Fontaine-la-Louvet",
+  "Fort-Moville",
+  "Foulbec",
+  "Fouqueville",
+  "Franqueville",
+  "Freneuse-sur-Risle",
+  "Fresne-Cauverville",
+  "Fumichon",
+  "Giverville",
+  "Glos-sur-Risle",
+  "Goupil-Othon",
+  "Grand Bourgtheroulde",
+  "Harcourt",
+  "Hauville",
+  "Hecmanville",
+  "Hectomare",
+  "Heudreville-en-Lieuvin",
+  "Heurteauville",
+  "Honguemare-Guenouville",
+  "Illeville-sur-Montfort",
+  "Iville",
+  "Jumièges",
+  "L'Hôtellerie",
+  "La Bouille",
+  "La Chapelle-Bayvel",
+  "La Chapelle-Hareng",
+  "La Haye-Aubrée",
+  "La Haye-de-Calleville",
+  "La Haye-de-Routot",
+  "La Haye-du-Theil",
+  "La Lande-Saint-Léger",
+  "La Londe",
+  "La Neuville-du-Bosc",
+  "La Noë-Poulain",
+  "La Poterie-Mathieu",
+  "La Pyle",
+  "La Saussaye",
+  "La Trinité-de-Thouberville",
+  "Launay",
+  "Le Bec-Hellouin",
+  "Le Bec-Thomas",
+  "Le Bois-Hellain",
+  "Le Bosc du Theil",
+  "Le Faulq",
+  "Le Favril",
+  "Le Landin",
+  "Le Mesnil-Saint-Jean",
+  "Le Mesnil-sous-Jumièges",
+  "Le Neubourg",
+  "Le Perrey",
+  "Le Pin",
+  "Le Theil-Nolent",
+  "Le Thuit de l'Oison",
+  "Le Torpt",
+  "Le Troncq",
+  "Les Monts du Roumois",
+  "Les Places",
+  "Les Préaux",
+  "Lieurey",
+  "Livet-sur-Authou",
+  "Malleville-sur-le-Bec",
+  "Malouy",
+  "Manneville-sur-Risle",
+  "Marais-Vernier",
+  "Martainville",
+  "Mauny",
+  "Menneval",
+  "Montfort-sur-Risle",
+  "Morainville-Jouveaux",
+  "Morsan",
+  "Moulineaux",
+  "Moyaux",
+  "Nassandres sur Risle",
+  "Neuville-sur-Authou",
+  "Noards",
+  "Norville",
+  "Notre-Dame-d'Épine",
+  "Petiville",
+  "Piencourt",
+  "Plainville",
+  "Plasnes",
+  "Pont-Audemer",
+  "Pont-Authou",
+  "Quillebeuf-sur-Seine",
+  "Rouge-Perriers",
+  "Rougemontier",
+  "Routot",
+  "Sahurs",
+  "Saint-Aubin-de-Scellon",
+  "Saint-Aubin-sur-Quillebeuf",
+  "Saint-Benoît-des-Ombres",
+  "Saint-Christophe-sur-Condé",
+  "Saint-Cyr-de-Salerne",
+  "Saint-Denis-des-Monts",
+  "Saint-Éloi-de-Fourques",
+  "Saint-Étienne-l'Allier",
+  "Saint-Georges-du-Vièvre",
+  "Saint-Grégoire-du-Vièvre",
+  "Saint-Léger-de-Rôtes",
+  "Saint-Léger-du-Gennetey",
+  "Saint-Maclou",
+  "Saint-Mards-de-Blacarville",
+  "Saint-Martin-du-Tilleul",
+  "Saint-Martin-Saint-Firmin",
+  "Saint-Maurice-d'Ételan",
+  "Saint-Meslin-du-Bosc",
+  "Saint-Ouen-de-Pontcheuil",
+  "Saint-Ouen-de-Thouberville",
+  "Saint-Ouen-du-Tilleul",
+  "Saint-Paul-de-Fourques",
+  "Saint-Philbert-sur-Boissey",
+  "Saint-Philbert-sur-Risle",
+  "Saint-Pierre-de-Cormeilles",
+  "Saint-Pierre-de-Manneville",
+  "Saint-Pierre-de-Salerne",
+  "Saint-Pierre-des-Fleurs",
+  "Saint-Pierre-des-Ifs",
+  "Saint-Pierre-du-Bosguérard",
+  "Saint-Pierre-du-Val",
+  "Saint-Samson-de-la-Roque",
+  "Saint-Siméon",
+  "Saint-Sulpice-de-Grimbouville",
+  "Saint-Sylvestre-de-Cormeilles",
+  "Saint-Symphorien",
+  "Saint-Victor-d'Épine",
+  "Saint-Vincent-du-Boulay",
+  "Sainte-Opportune-du-Bosc",
+  "Sainte-Opportune-la-Mare",
+  "Selles",
+  "Serquigny",
+  "Thénouville",
+  "Thiberville",
+  "Thibouville",
+  "Thierville",
+  "Tocqueville",
+  "Tourville-la-Campagne",
+  "Tourville-sur-Pont-Audemer",
+  "Toutainville",
+  "Treis-Sants-en-Ouche",
+  "Triqueville",
+  "Trouville-la-Haule",
+  "Valailles",
+  "Valletot",
+  "Vannecrocq",
+  "Vatteville-la-Rue",
+  "Vieux-Port",
+  "Villez-sur-le-Neubourg",
+  "Vitot",
+  "Voiscreville",
+  "Yainville",
+  "Yville-sur-Seine"
+ ]
+}

@@ -9,7 +9,7 @@
 {%- for s in services %}{% if s.url != page.url %}
         <li><a href="{{ s.url }}"><strong>{{ s.name }}</strong><span>{{ s.short }}</span></a></li>
 {%- endif %}{% endfor %}
-        <li><a href="/realisations/"><strong>Nos réalisations</strong><span>Avant / après de nos chantiers.</span></a></li>
+        {% if page.url != "/realisations/" %}<li><a href="/realisations/"><strong>Nos réalisations</strong><span>Avant / après de nos chantiers.</span></a></li>{% endif %}
       </ul>
     </div>
   </section>

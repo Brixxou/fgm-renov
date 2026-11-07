@@ -1,0 +1,65 @@
+---
+permalink: /zone-intervention/
+title: "Zone d'intervention : 211 communes autour de Pont-Audemer | FGM RENOV"
+description: "FGM RENOV intervient dans 211 communes à moins de 25 km de Saint-Philbert-sur-Risle : Pont-Audemer, Brionne, Bernay, Bourg-Achard, Montfort-sur-Risle et leurs villages."
+sitemap: true
+images: []
+crumb: "Zone d'intervention"
+kicker: "Zone d'intervention"
+heroTitle: "Nos communes d'intervention <i>autour de <span class=\"nowrap\">Pont-Audemer</span></i>"
+lead: "Basés à Saint-Philbert-sur-Risle (27290), nous intervenons dans 211 communes à moins de 25&nbsp;km : Vallée de la Risle, Roumois, Lieuvin et plateau du Neubourg. Pour les chantiers de rénovation, nous allons jusqu'à 50&nbsp;km."
+serviceName: "Rénovation intérieure"
+serviceType: "Rénovation intérieure, salle de bain, carrelage, dépannage"
+useCommunes: true
+faq:
+  - q: "Intervenez-vous dans ma commune ?"
+    a: "Si elle figure sur cette page, oui. Si elle n'y est pas, appelez-nous : pour un chantier de rénovation, nous nous déplaçons jusqu'à 50 km autour de Saint-Philbert-sur-Risle."
+  - q: "Jusqu'où vous déplacez-vous pour un dépannage ?"
+    a: "Pour un dépannage (volet roulant bloqué, fuite, carrelage cassé), nous intervenons dans un rayon de 40 km, avec un rappel sous 2 heures ouvrées."
+---
+{% extends "base.njk" %}
+{% block head %}
+{% include "service-schema.njk" %}
+{% endblock %}
+{% block main %}
+{% include "page-hero.njk" %}
+
+  <section class="page-section" aria-labelledby="communes-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="kicker">{{ communes.total }} communes</p>
+        <h2 id="communes-title">À moins de 25&nbsp;km de Saint-Philbert-sur-Risle</h2>
+        <hr>
+      </header>
+      <p class="page-note communes-note">Distances à vol d'oiseau depuis Saint-Philbert-sur-Risle. Les communes de plus de 2&nbsp;000 habitants sont en gras.</p>
+{%- for b in communes.bands %}
+      <div class="communes-band">
+        <h3>{{ b.label }} <span>· {{ b.communes | length }} communes</span></h3>
+        <ul class="communes-list">
+{%- for c in b.communes %}
+          <li>{% if c.grande %}<strong>{{ c.nom }}</strong>{% else %}{{ c.nom }}{% endif %} <small>{{ c.cp }}</small></li>
+{%- endfor %}
+        </ul>
+      </div>
+{%- endfor %}
+    </div>
+  </section>
+
+  <section class="page-section alt" aria-labelledby="loin-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="kicker">Rénovation jusqu'à 50&nbsp;km</p>
+        <h2 id="loin-title">Et aussi, pour vos chantiers de rénovation</h2>
+        <hr>
+      </header>
+      <ul class="zone-list">
+        <li>Rouen</li><li>Elbeuf</li><li>Grand-Couronne</li><li>Le Havre</li><li>Port-Jérôme-sur-Seine</li><li>Lillebonne</li><li>Honfleur</li><li>Lisieux</li><li>Le Neubourg</li><li>Beaumont-le-Roger</li>
+      </ul>
+      <p class="page-note">Dépannage rapide dans un rayon de 40&nbsp;km. Votre commune n'apparaît pas ? <a href="tel:{{ site.phoneIntl }}">Appelez-nous</a>, un déplacement reste possible sur devis.</p>
+    </div>
+  </section>
+
+{% include "faq-list.njk" %}
+{% include "related.njk" %}
+{% include "cta.njk" %}
+{% endblock %}
