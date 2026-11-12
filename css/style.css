@@ -1172,7 +1172,7 @@ a.contact-row:hover { transform: translateX(4px); }
 .footer-logo { display: inline-block; margin-bottom: 16px; }
 .footer-logo img { width: 88px; height: 88px; border-radius: 6px; background: #fff; }
 .footer-tag { color: var(--warm); line-height: 1.7; font-size: 13px; }
-.footer h4 {
+.footer .footer-h {
   font-family: 'Lato', sans-serif;
   font-size: 12px;
   letter-spacing: .14em;

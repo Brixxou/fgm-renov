@@ -3,7 +3,7 @@ export default function (eleventyConfig) {
   // Fichiers servis tels quels
   for (const p of ["css", "js", "img", "fonts", "favicon.ico", "favicon-96.png", "apple-touch-icon.png",
                    "site.webmanifest", "robots.txt", "merci.html", "mentions-legales.html",
-                   "confidentialite.html", "404.html"]) {
+                   "confidentialite.html", "404.html", "c054c400baa286f14ce8bcdd53d5a201.txt"]) {
     eleventyConfig.addPassthroughCopy(p);
   }
 }
