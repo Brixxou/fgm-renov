@@ -1,0 +1,70 @@
+---
+permalink: "/douche-senior/"
+title: "Douche senior de plain-pied · Pont-Audemer | FGM RENOV"
+description: "Baignoire remplacée par une douche de plain-pied près de Pont-Audemer : sans marche, barres d'appui, siège, sol antidérapant. Devis gratuit sous 48 h."
+sitemap: true
+images: ["douche-italienne-zellige-vert-apres", "douche-colonne-thermostatique"]
+crumb: "Douche senior"
+kicker: "Adapter sa salle de bain"
+heroTitle: "Remplacer une baignoire par une <i>douche de <span class=\"nowrap\">plain-pied</span></i>"
+lead: "Enjamber le rebord d'une baignoire devient risqué avec l'âge. Nous la remplaçons par une douche de plain-pied, sans marche, avec les équipements qui sécurisent la toilette."
+serviceName: "Remplacement de baignoire par une douche de plain-pied"
+serviceType: "Adaptation de salle de bain pour personne âgée"
+faq: [{"q": "Quels équipements pour sécuriser la douche ?", "a": "Selon vos besoins : douche de plain-pied ou receveur extra-plat, carrelage antidérapant, barres d'appui, siège de douche rabattable et mitigeur thermostatique contre les brûlures. Nous en parlons ensemble lors de la visite."}, {"q": "Le devis est-il gratuit ?", "a": "Oui. Nous venons voir la salle de bain, sans engagement, puis nous vous envoyons un devis détaillé sous 48 heures."}]
+---
+{% extends "base.njk" %}
+{% block head %}
+{% include "service-schema.njk" %}
+{% endblock %}
+{% block main %}
+{% include "page-hero.njk" %}
+
+  <section class="page-section" aria-labelledby="presta-senior-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="kicker">Prestations</p>
+        <h2 id="presta-senior-title">Une douche sûre et facile</h2>
+        <hr>
+      </header>
+      <ul class="checks">
+        <li>Dépose de la baignoire</li>
+        <li>Douche de plain-pied ou receveur extra-plat</li>
+        <li>Carrelage antidérapant</li>
+        <li>Barres d'appui</li>
+        <li>Siège de douche rabattable</li>
+        <li>Mitigeur thermostatique, contre les brûlures</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="page-section alt" aria-labelledby="real-senior-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="kicker">Réalisations</p>
+        <h2 id="real-senior-title">Nos douches de plain-pied</h2>
+        <hr>
+      </header>
+      <div class="compare-grid compare-grid-1">
+{% include "compare-douche.njk" %}
+      </div>
+      <div class="gallery-extra" aria-label="Autres douches">
+        <figure>
+          <picture><source srcset="/img/douche-colonne-thermostatique.webp" type="image/webp"><img src="/img/douche-colonne-thermostatique.jpg" alt="Douche rénovée : colonne de douche thermostatique chromée, faïence beige texturée et tablettes d'angle" loading="lazy" width="800" height="1067"></picture>
+          <figcaption>Douche — colonne thermostatique &amp; faïence texturée</figcaption>
+        </figure>
+        <figure>
+          <picture><source srcset="/img/douche-italienne-zellige-bleu.webp" type="image/webp"><img src="/img/douche-italienne-zellige-bleu.jpg" alt="Douche à l'italienne : faïence bleue verticale, pommeau pluie doré brossé" loading="lazy" width="800" height="1066"></picture>
+          <figcaption>Douche à l'italienne — faïence zellige bleue</figcaption>
+        </figure>
+        <figure>
+          <picture><source srcset="/img/renovation-salle-d-eau-travertin-apres.webp" type="image/webp"><img src="/img/renovation-salle-d-eau-travertin-apres.jpg" alt="Salle d'eau rénovée : travertin au sol, faïence bleu clair, WC suspendu, vasque pierre" loading="lazy" width="800" height="1066"></picture>
+          <figcaption>Salle d'eau — travertin &amp; faïence</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+{% include "faq-list.njk" %}
+{% include "related.njk" %}
+{% include "cta.njk" %}
+{% endblock %}

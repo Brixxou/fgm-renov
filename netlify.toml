@@ -39,6 +39,19 @@
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
+# ── Ancienne adresse de la page Douche senior (MaPrimeAdapt retiré du site) ──
+[[redirects]]
+  from = "/douche-senior-maprimeadapt/"
+  to = "/douche-senior/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/douche-senior-maprimeadapt"
+  to = "/douche-senior/"
+  status = 301
+  force = true
+
 # ── Redirection vers le domaine officiel ──
 # L'adresse technique Netlify renvoie vers le domaine principal : une seule URL indexée.
 # (fgmrenov.fr → www.fgmrenov.fr est géré par Netlify via le « primary domain ».)
